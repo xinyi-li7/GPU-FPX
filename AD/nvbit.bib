@@ -1,0 +1,4012 @@
+
+
+@inproceedings{higham-tensor-cores,
+author = {{M. Fasiand N.J. Higham and M. Mikaitis and S.Pranesh}},
+title = {{Numerical behavior of NVIDIA tensor cores}},
+booktitle = {{PeerJ Comput Sci}},
+year = 2021,
+month = feb,
+doi = {10.7717/peerj-cs.330}
+}
+
+@inbook{10.1145/3460319.3464843,
+author = {Zhang, Xufan and Sun, Ning and Fang, Chunrong and Liu, Jiawei and Liu, Jia and Chai, Dong and Wang, Jiang and Chen, Zhenyu},
+title = {Predoo: Precision Testing of Deep Learning Operators},
+year = {2021},
+isbn = {9781450384599},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3460319.3464843},
+abstract = {Deep learning(DL) techniques attract people from various fields with superior performance in making progressive breakthroughs. To ensure the quality of DL techniques, researchers have been working on testing and verification approaches. Some recent studies reveal that the underlying DL operators could cause defects inside a DL model. DL operators work as fundamental components in DL libraries. Library developers still work on practical approaches to ensure the quality of operators they provide. However, the variety of DL operators and the implementation complexity make it challenging to evaluate their quality. Operator testing with limited test cases may fail to reveal hidden defects inside the implementation. Besides, the existing model-to-library testing approach requires extra labor and time cost to identify and locate errors, i.e., developers can only react to the exposed defects. This paper proposes a fuzzing-based operator-level precision testing approach to estimate individual DL operators’ precision errors to bridge this gap. Unlike conventional fuzzing techniques, valid shape variable inputs and fine-grained precision error evaluation are implemented. The testing of DL operators is treated as a searching problem to maximize output precision errors. We implement our approach in a tool named Predoo and conduct an experiment on seven DL operators from TensorFlow. The experiment result shows that Predoo can trigger larger precision errors compared to the error threshold declared in the testing scripts from the TensorFlow repository.},
+booktitle = {Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+pages = {400–412},
+numpages = {13}
+}
+
+@article{cacm-accelerator-oriented-programming,
+author = {Hill, Mark D. and Reddi, Vijay Janapa},
+title = {Accelerator-Level Parallelism},
+issue_date = {December 2021},
+year = {2021},
+publisher = {Association for Computing Machinery},
+volume = {64},
+number = {12},
+issn = {0001-0782},
+doi = {10.1145/3460970},
+journal = {Commun. ACM},
+}
+
+
+
+
+@inproceedings{sfu,
+author = {Li, Ang and Song, Shuaiwen Leon and Wijtvliet, Mark and Kumar, Akash and Corporaal, Henk},
+title = {SFU-Driven Transparent Approximation Acceleration on GPUs},
+year = {2016},
+isbn = {9781450343619},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2925426.2926255},
+doi = {10.1145/2925426.2926255},
+abstract = {Approximate computing, the technique that sacrifices certain amount of accuracy in exchange for substantial performance boost or power reduction, is one of the most promising solutions to enable power control and performance scaling towards exascale. Although most existing approximation designs target the emerging data-intensive applications that are comparatively more error-tolerable, there is still high demand for the acceleration of traditional scientific applications (e.g., weather and nuclear simulation), which often comprise intensive transcendental function calls and are very sensitive to accuracy loss. To address this challenge, we focus on a very important but long ignored approximation unit on today's commercial GPUs --- the special-function unit (SFU), and clarify its unique role in performance acceleration of accuracy-sensitive applications in the context of approximate computing. To better understand its features, we conduct a thorough empirical analysis on three generations of NVIDIA GPU architectures to evaluate all the single-precision and double-precision numeric transcendental functions that can be accelerated by SFUs, in terms of their performance, accuracy and power consumption. Based on the insights from the evaluation, we propose a transparent, tractable and portable design framework for SFU-driven approximate acceleration on GPUs. Our design is software-based and requires no hardware or application modifications. Experimental results on three NVIDIA GPU platforms demonstrate that our proposed framework can provide fine-grained tuning for performance and accuracy trade-offs, thus facilitating applications to achieve the maximum performance under certain accuracy constraints.},
+booktitle = {Proceedings of the 2016 International Conference on Supercomputing},
+articleno = {15},
+numpages = {14},
+keywords = {Approximate Computing, Special-Function-Unit, Performance/Energy/Accuracy Trade-offs, Program Transformation, GPU},
+location = {Istanbul, Turkey},
+series = {ICS '16}
+}
+
+
+
+@INPROCEEDINGS{gpu-os-supported-exceptions,
+  author={Tanasic, Ivan and Gelado, Isaac and Jorda, Marc and Ayguade, Eduard and Navarro, Nacho},
+  booktitle={2017 50th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)}, 
+  title={Efficient Exception Handling Support for GPUs}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={109-122},
+  doi={}}
+  
+@article{karu-gpu-exceptions,
+author = {Menon, Jaikrishnan and De Kruijf, Marc and Sankaralingam, Karthikeyan},
+title = {IGPU: Exception Support and Speculative Execution on GPUs},
+year = {2012},
+issue_date = {June 2012},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {40},
+number = {3},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/2366231.2337168},
+doi = {10.1145/2366231.2337168},
+abstract = {Since the introduction of fully programmable vertex shader hardware, GPU computing has made tremendous advances. Exception support and speculative execution are the next steps to expand the scope and improve the usability of GPUs. However, traditional mechanisms to support exceptions and speculative execution are highly intrusive to GPU hardware design. This paper builds on two related insights to provide a unified lightweight mechanism for supporting exceptions and speculation on GPUs.First, we observe that GPU programs can be broken into code regions that contain little or no live register state at their entry point. We then also recognize that it is simple to generate these regions in such a way that they are idempotent, allowing their entry points to function as program recovery points and enabling support for exception handling, fast context switches, and speculation, all with very low overhead. We call the architecture of GPUs executing these idempotent regions the iGPU architecture. The hardware extensions required are minimal and the construction of idempotent code regions is fully transparent under the typical dynamic compilation framework of GPUs. We demonstrate how iGPU exception support enables virtual memory paging with very low overhead (1% to 4%), and how speculation support enables circuit-speculation techniques that can provide over 25% reduction in energy.},
+journal = {SIGARCH Comput. Archit. News},
+month = {jun},
+pages = {72–83},
+numpages = {12}
+}
+
+
+@inproceedings{10.5555/2337159.2337168,
+author = {Menon, Jaikrishnan and De Kruijf, Marc and Sankaralingam, Karthikeyan},
+title = {IGPU: Exception Support and Speculative Execution on GPUs},
+year = {2012},
+isbn = {9781450316422},
+publisher = {IEEE Computer Society},
+address = {USA},
+abstract = {Since the introduction of fully programmable vertex shader hardware, GPU computing has made tremendous advances. Exception support and speculative execution are the next steps to expand the scope and improve the usability of GPUs. However, traditional mechanisms to support exceptions and speculative execution are highly intrusive to GPU hardware design. This paper builds on two related insights to provide a unified lightweight mechanism for supporting exceptions and speculation on GPUs.First, we observe that GPU programs can be broken into code regions that contain little or no live register state at their entry point. We then also recognize that it is simple to generate these regions in such a way that they are idempotent, allowing their entry points to function as program recovery points and enabling support for exception handling, fast context switches, and speculation, all with very low overhead. We call the architecture of GPUs executing these idempotent regions the iGPU architecture. The hardware extensions required are minimal and the construction of idempotent code regions is fully transparent under the typical dynamic compilation framework of GPUs. We demonstrate how iGPU exception support enables virtual memory paging with very low overhead (1% to 4%), and how speculation support enables circuit-speculation techniques that can provide over 25% reduction in energy.},
+booktitle = {Proceedings of the 39th Annual International Symposium on Computer Architecture},
+pages = {72–83},
+numpages = {12},
+location = {Portland, Oregon},
+series = {ISCA '12}
+}
+
+
+
+@inproceedings{laguna2019fpchecker,
+author = {Laguna, Ignacio},
+title = {FPChecker: Detecting Floating-Point Exceptions in GPU Applications},
+year = {2019},
+isbn = {9781728125084},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ASE.2019.00118},
+doi = {10.1109/ASE.2019.00118},
+abstract = {Floating-point arithmetic is widely used in applications from several fields including scientific computing, machine learning, graphics, and finance. Many of these applications are rapidly adopting the use of GPUs to speedup computations. GPUs, however, have limited support to detect floating-point exceptions, which hinders the development of reliable applications in GPU-based systems. We present FPChecker, the first tool to automatically detect floating-point exceptions in GPU applications. FPChecker uses the clang/LLVM compiler to instrument GPU kernels and to detect exceptions at runtime. Once an exception is detected, it reports to the programmer the code location of the exception as well as other useful information. The programmer can then use this report to avoid the exception, e.g., by modifying the application algorithm or changing the input. We present the design of FPChecker, an evaluation of the overhead of the tool, and a real-world case scenario on which the tool is used to identify a hidden exception. The slowdown of FPChecker is moderate and the code is publicly available as open source.},
+booktitle = {Proceedings of the 34th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {1126–1129},
+numpages = {4},
+keywords = {scientific computing, GPU, floating-point arithmetic, exceptions},
+location = {San Diego, California},
+series = {ASE '19}
+}
+
+
+
+@article{hauser,
+author = {Hauser, John R.},
+title = {Handling Floating-Point Exceptions in Numeric Programs},
+year = {1996},
+issue_date = {March 1996},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {18},
+number = {2},
+issn = {0164-0925},
+url = {https://doi.org/10.1145/227699.227701},
+doi = {10.1145/227699.227701},
+abstract = {There are a number of schemes for handling arithmetic exceptions that can be used to improve the speed (or alternatively the reliability) of numeric code. Overflow and underflow are the most troublesome exceptions, and depending on the context in which the exception can occur, they may be addressed either: (1) through a “brute force” reevaluation with extended range, (2) by reevaluating using a technique known as scaling, (3) by substituting an infinity or zero, or (4) in the case of underflow, with gradual underflow. In the first two of these cases, the offending computation is simply reevaluated using a safer but slower method. The latter two cases are cheaper, more automated schemes that ideally are built in as options within the computer system. Other arithmetic exceptions can be handled with similar methods. These and some other techniques are examined with an eye toward determining the support programming languages and computer systems ought to provide for floating-point exception handling. It is argued that the cheapest short-term solution would be to give full support to most of the required (as opposed to recommended) special features of the IEC/IEEE Standard for Binary Floating-Point Arithmetic. An essential part of this support would include standardized access from high-level languages to the exception flags defined by the standard. Some possibilities outside the IEEE Standard are also considered, and a few thought on possible better-structured support within programming languages are discussed.},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = {mar},
+pages = {139–174},
+numpages = {36},
+keywords = {floating-point, arithmetic, exception handling}
+}
+
+
+@article{DBLP:journals/sigarch/LeeserYBK11,
+  author    = {Miriam Leeser and
+               Devon Yablonski and
+               Dana H. Brooks and
+               Laurie A. Smith King},
+  title     = {The challenges of writing portable, correct and high performance libraries
+               for GPUs},
+  journal   = {{SIGARCH} Comput. Archit. News},
+  volume    = {39},
+  number    = {4},
+  pages     = {2--7},
+  year      = {2011},
+  url       = {https://doi.org/10.1145/2082156.2082158},
+  doi       = {10.1145/2082156.2082158},
+  timestamp = {Thu, 30 Jul 2020 14:31:26 +0200},
+  biburl    = {https://dblp.org/rec/journals/sigarch/LeeserYBK11.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{GPUMixer,
+	author    = {Ignacio Laguna and
+               Paul C. Wood and
+               Ranvijay Singh and
+               Saurabh Bagchi},
+ 	editor    = {Mich{\`{e}}le Weiland and
+               Guido Juckeland and
+               Carsten Trinitis and
+               Ponnuswamy Sadayappan},
+	title     = {GPUMixer: Performance-Driven Floating-Point Tuning for {GPU} Scientific
+               Applications},
+	booktitle = {High Performance Computing - 34th International Conference, {ISC}
+               High Performance 2019, Frankfurt/Main, Germany, June 16-20, 2019,
+               Proceedings},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {11501},
+	pages     = {227--246},
+	publisher = {Springer},
+	year      = {2019},
+	url       = {https://doi.org/10.1007/978-3-030-20656-7\_12},
+	doi       = {10.1007/978-3-030-20656-7\_12},
+}
+
+
+@inproceedings{hifptuner,
+	author = {Guo, Hui and Rubio-González, Cindy},
+	year = {2018},
+	month = {07},
+	booktitle = {ISSTA},
+	pages = {333-343},
+	title = {{Exploiting community structure for floating-point precision tuning}},
+	doi = {10.1145/3213846.3213862}
+}
+
+@inproceedings{sc13-precimonious,
+	author    = {Cindy Rubio-Gonz\'{a}lez and
+               Cuong Nguyen and
+               Hong Diep Nguyen and
+               James Demmel and
+               William Kahan and
+               Koushik Sen and
+               David H. Bailey and
+               Costin Iancu and
+               David Hough},
+	title     = {{Precimonious: Tuning Assistant for Floating-Point Precision}},
+	booktitle = {Supercomputing (SC)},
+	year      = {2013},
+	pages = {27:1--27:12},
+	note = {\url{https://github.com/corvette-berkeley/precimonious}}
+}
+
+
+@inproceedings{ics13-lam-hollingsworth-fp-tuning,
+	author    = {Michael O. Lam and
+               Jeffrey K. Hollingsworth and
+               Bronis R. de Supinski and
+               Matthew P. LeGendre},
+	title     = {Automatically Adapting Programs for Mixed-Precision Floating-Point
+               Computation},
+	booktitle = {International Conference on Supercomputing (ICS)},
+	year      = {2013},
+	pages     = {369--378},
+}
+
+
+@inproceedings{fpbench1.2,
+	author={D. {Thien} and B. {Zorn} and P. {Panchekha} and Z. {Tatlock}},
+	booktitle={2019 IEEE/ACM 3rd International Workshop on Software Correctness for HPC Applications (Correctness)}, 
+	title={Toward Multi-Precision, Multi-Format Numerics}, 
+	year={2019},
+	volume={},
+	number={},
+	pages={19-26},
+}
+
+
+@inproceedings{our-correctness21-paper,
+	author = {Ganesh Gopalakrishnan and
+        Ignacio Laguna and
+        Ang Li and
+        Pavel Panchekha and
+        Cindy Rubio-Gonz\'{a}lez and
+        Zachary Tatlock},
+	title = {Guarding Numerics Amidst Rising Heterogeneity},
+	booktitle = {Correctness 2021: Fifth International Workshop on Software Correctness for HPC Applications},
+	note = {\url{https://correctness-workshop.github.io/2021/}},
+	year = {2021}
+}
+	
+@misc{mike-lam-medium-fp-benchmarks,
+	key = {mike-lam-medium-fp-benchmarks},
+	note = {\url{https://github.com/crafthpc/fphpc}}
+}
+
+@inproceedings{DBLP:conf/kbse/FrancoGR17,
+	author    = {Anthony Di Franco and
+               Hui Guo and
+               Cindy Rubio{-}Gonz{\'{a}}lez},
+	title     = {A comprehensive study of real-world numerical bug characteristics},
+	booktitle = {Proceedings of the 32nd {IEEE/ACM} International Conference on Automated
+               Software Engineering, {ASE} 2017, Urbana, IL, USA, October 30 - November
+               03, 2017},
+	pages     = {509--519},
+	year      = {2017},
+	crossref  = {DBLP:conf/kbse/2017},
+	url       = {https://doi.org/10.1109/ASE.2017.8115662},
+	doi       = {10.1109/ASE.2017.8115662},
+}
+@proceedings{DBLP:conf/kbse/2017,
+	editor    = {Grigore Rosu and
+               Massimiliano Di Penta and
+               Tien N. Nguyen},
+	title     = {Proceedings of the 32nd {IEEE/ACM} International Conference on Automated
+               Software Engineering, {ASE} 2017, Urbana, IL, USA, October 30 - November
+               03, 2017},
+	publisher = {{IEEE} Computer Society},
+	year      = {2017},
+	url       = {http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8106906},
+	isbn      = {978-1-5386-2684-9},
+}
+
+@inproceedings{popl2017-cbbsgr,
+	author = {Wei-Fan Chiang and Mark Baranowski and Ian Briggs and Alexey Solovyev and
+    Ganesh Gopalakrishnan and Zvonimir Rakamari\'c},
+	title = {{Rigorous Floating-Point Mixed-Precision Tuning}},
+	booktitle = {Proceedings of the ACM SIGPLAN Symposium on Principles of
+    Programming Languages (POPL)},
+	pages={300--315},
+	publisher = {ACM},
+	year = {2017},
+	url = {https://doi.org/10.1145/3009837.3009846},
+	doi = {10.1145/3009837.3009846},
+}
+
+inproceedings{adapt,
+	author = {Menon, Harshitha and Lam, Michael O. and Osei-Kuffuor, Daniel and Schordan, Markus and Lloyd, Scott and Mohror, Kathryn and Hittinger, Jeffrey},
+	title = {{ADAPT: Algorithmic Differentiation Applied to Floating-Point Precision Tuning}},
+	year = {2018},
+	publisher = {IEEE Press},
+	booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage, and Analysis},
+	location = {Dallas, Texas},
+	series = {SC ’18}
+}
+
+
+@book{fp-handbook,
+	author = {Muller, Jean-Michel and Brunie, Nicolas and de Dinechin, Florent and Jeannerod, Claude-Pierre and Joldes, Mioara and Lefvre, Vincent and Melquiond, Guillaume and Revol, Nathalie and Torres, Serge},
+	title = {Handbook of Floating-Point Arithmetic},
+	year = {2018},
+	isbn = {3319765256},
+	publisher = {Birkh\"{a}user Basel},
+	edition = {2nd},
+}
+
+@article{anzt-dongarra,
+	author    = {Hartwig Anzt and
+               Jack J. Dongarra and
+               Goran Flegar and
+               Nicholas J. Higham and
+               Enrique S. Quintana{-}Ort{\'{\i}}},
+	title     = {Adaptive precision in block-Jacobi preconditioning for iterative sparse
+               linear system solvers},
+	journal   = {Concurr. Comput. Pract. Exp.},
+	volume    = {31},
+	number    = {6},
+	year      = {2019},
+	pages 	  = {e4460},
+	url       = {https://doi.org/10.1002/cpe.4460},
+	doi       = {10.1002/cpe.4460},
+}
+
+@misc{abdelfattah2020survey,
+	title={A Survey of Numerical Methods Utilizing Mixed Precision Arithmetic}, 
+	author={Ahmad Abdelfattah and Hartwig Anzt and Erik G. Boman and Erin Carson and Terry Cojean and Jack Dongarra and Mark Gates and Thomas Grützmacher and Nicholas J. Higham and Sherry Li and Neil Lindquist and Yang Liu and Jennifer Loe and Piotr Luszczek and Pratik Nayak and Sri Pranesh and Siva Rajamanickam and Tobias Ribizel and Barry Smith and Kasia Swirydowicz and Stephen Thomas and Stanimire Tomov and Yaohung M. Tsai and Ichitaro Yamazaki and Urike Meier Yang},
+	year={2020},
+	eprint={2007.06674},
+	archivePrefix={arXiv},
+	primaryClass={cs.MS}
+}
+
+@book{realtime,
+	author = {Ericson, Christer},
+	title = {{Real-Time Collision Detection}},
+	year = {2004},
+	isbn = {1558607323},
+	publisher = {CRC Press, Inc.},
+	address = {USA}
+}
+
+@misc{clang-llvm,
+	author = "{LLVM.org}",
+	title = {{The LLVM Compiler Infrastructure}},
+	howpublished = 
+	{\url{https://llvm.org/}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}	
+
+
+@misc{nvcc,
+	author = "{NVIDIA}",
+	title = {{CUDA Toolkit Documentation}},
+	howpublished = 
+	{\url{https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}	
+
+@misc{sass,
+	title = {{CUDA Binary Utilities}},
+	howpublished = 
+	{\url{https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+@inproceedings{DBLP:conf/cgo/HayesHHCZ19,
+  author    = {Ari B. Hayes and
+               Fei Hua and
+               Jin Huang and
+               Yan{-}Hao Chen and
+               Eddy Z. Zhang},
+  editor    = {Mahmut Taylan Kandemir and
+               Alexandra Jimborean and
+               Tipp Moseley},
+  title     = {Decoding {CUDA} Binary},
+  booktitle = {{IEEE/ACM} International Symposium on Code Generation and Optimization,
+               {CGO} 2019, Washington, DC, USA, February 16-20, 2019},
+  pages     = {229--241},
+  publisher = {{IEEE}},
+  year      = {2019},
+  url       = {https://doi.org/10.1109/CGO.2019.8661186},
+  doi       = {10.1109/CGO.2019.8661186},
+  timestamp = {Wed, 16 Oct 2019 14:14:57 +0200},
+  biburl    = {https://dblp.org/rec/conf/cgo/HayesHHCZ19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+
+@misc{gfpbench,
+	title = {{gfpbench}},
+	howpublished = 
+	{\url{https://github.com/uuudown/gfpbench}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+@misc{gfpbench-ang-thesis,
+	title = {{GPU Performance Modeling and Optimization}},
+	howpublished = 
+	{\url{https://core.ac.uk/download/pdf/83105717.pdf}},
+	note = {Online; accessed March, 30, 2022},
+	year={2016},
+	author={Li, Ang},
+}
+
+@misc{anec-1,
+key = {anec-1},
+howpublished = {\url{https://github.com/benfred/implicit/issues/377}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},}
+
+@misc{anec-2,
+key = {anec-2},
+howpublished = {\url{https://github.com/SciML/NeuralPDE.jl/issues/466}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},}
+
+@misc{anec-3,
+key = {anec-3},
+howpublished = {\url{https://github.com/cuMF/cumf\_als}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},}
+	
+
+@misc{cuda-sdk-benchmarks,
+key = {cuda-sdk-benchmarks},
+howpublished = {\url{http://developer.download.nvidia.com/compute/cuda/4\_0/sdk/gpucomputingsdk\_4.0.17\_linux.run}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},}
+
+@article{LI2015998,
+title = {Correlation ratio based volume image registration on GPUs},
+journal = {Microprocessors and Microsystems},
+volume = {39},
+number = {8},
+pages = {998-1011},
+year = {2015},
+issn = {0141-9331},
+doi = {https://doi.org/10.1016/j.micpro.2015.04.002},
+url = {https://www.sciencedirect.com/science/article/pii/S0141933115000459},
+author = {Ang Li and Akash Kumar and Yajun Ha and Henk Corporaal},
+keywords = {Image registration, Histogram, GPU, Correlation ratio, Conflict-free},
+abstract = {Volume image registration remains one of the best candidates for Graphics Processing Unit (GPU) acceleration because of its enormous computation time and plentiful data-level parallelism. However, an efficient GPU implementation for image registration is still challenging due to the heavy utilization of expensive atomic operations for similarity calculations. In this paper, we first propose five GPU-friendly Correlation Ratio (CR) based methods to accelerate the process of image registration. Compared to widely used Mutual Information (MI) based methods, the CR-based approaches require less resource for shadow histograms, a faster storage, such as the on-chip scratchpad memory, therefore can be fully exploited to achieve better performance. Second, we make design space exploration of the CR-based methods, and study the trade-off of introducing shadow histograms on different storage (shared memory, global memory) by computation units of different granularity (thread, warp, thread block). Third, we exhaustively test the proposed designs on GPUs of different generations (Fermi, Kepler and Maxwell) so that performance variations due to hardware migration are addressed. Finally, we evaluate the performance impact corresponding to the tuning of concurrency, algorithm settings as well as overheads incurred by preprocessing, smoothing and workload unbalancing. We highlight our last CR approach which completely avoids updating conflicts of histogram calculation, leading to substantial performance improvements (up to 55× speedup over naive CPU implementation). It reduces the registration time from 145s to 2.6s for two typical 256×256×160 volume images on a Kepler GPU.}
+}
+
+
+
+
+@misc{gpu-fperror-exceptions,
+	title = {{CUDA C++ Programming Guide, v11.6.2}},
+	howpublished = 
+	{\url{https://docs.nvidia.com/cuda/floating-point/index.html}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+
+@misc{gpu-mixed-precision-training,
+	title = {{NVIDIA Deep Learning Performance}},
+	howpublished = 
+	{\url{https://docs.nvidia.com/deeplearning/performance/}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+@misc{clamr,
+key = {clamr},
+title = {{The ECP Proxy Application, CLAMR}},
+	howpublished = 
+	{\url{https://github.com/lanl/CLAMR}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+@misc{tensorRT,
+	title = {{NVIDIA TensorRT Documentation}},
+	howpublished = 
+	{\url{https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+@misc{shoc,
+	title = {{The SHOC Benchmark}},
+	howpublished = 
+	{\url{shochttps://github.com/vetter/shoc}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+@misc{CUDA,
+	title = {{CUDA C++ Programming Guide, v11.6.2}},
+	howpublished = 
+	{\url{https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html}},
+	note = {Online; accessed March, 30, 2022},
+	year={2022},
+}
+
+
+
+@misc{dawson-random-ascii,
+	key = {dawson-random-ascii},
+	note = {\url{https://randomascii.wordpress.com/2014/10/09/intel-underestimates-error-bounds-by-1-3-quintillion/}}
+}
+
+@misc{higham-et-al,
+	key = {higham-et-al},
+ 	author = {Fasi, M a d Higham N.J. and Mikaitis, M and Pranesh S},
+ 	year = {2021},
+ 	title = {Numerical behavior of NVIDIA tensor cores},
+ 	journal = {PeerJ Computer Science},
+ 	url = {https://doi.org/10.7717/peerj-cs.330}}
+
+@article{10.1145/3441830,
+	author = {Ho, Nhut-Minh and silva, Himeshi De and Wong, Weng-Fai},
+	title = {GRAM: A Framework for Dynamically Mixing Precisions in GPU Applications},
+	year = {2021},
+	url = {https://doi.org/10.1145/3441830},
+	doi = {10.1145/3441830},
+	journal = {ACM Trans. Archit. Code Optim.},
+	month = {feb},
+	keywords = {approximate computing, mixed precision, GPU, half preicision}
+}
+
+@inproceedings{dinda2020spying,
+	title={Spying on the floating point behavior of existing, unmodified scientific applications},
+	author={Dinda, Peter and Bernat, Alex and Hetland, Conor},
+	booktitle={Proceedings of the 29th International Symposium on High-Performance Parallel and Distributed Computing},
+	pages={5--16},
+	year={2020}
+}
+
+@inproceedings{lohar2021two,
+	title={A Two-Phase Approach for Conditional Floating-Point Verification.},
+	author={Lohar, Debasmita and Jeangoudoux, Clothilde and Sobel, Joshua and Darulova, Eva and Christakis, Maria},
+	booktitle={TACAS (2)},
+	pages={43--63},
+	year={2021}
+}
+
+@article{denis2015verificarlo,
+	title={Verificarlo: Checking floating point accuracy through monte carlo arithmetic},
+	author={Denis, Christophe and Castro, Pablo De Oliveira and Petit, Eric},
+	journal={arXiv preprint arXiv:1509.01347},
+	year={2015}
+}
+
+inproceedings{laguna2019fpchecker,
+	title={Fpchecker: Detecting floating-point exceptions in gpu applications},
+	author={Laguna, Ignacio},
+	booktitle={2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+	pages={1126--1129},
+	year={2019},
+	organization={IEEE}
+}
+
+@inproceedings{dinda2018,
+	title={{Do Developers Understand IEEE Floating Point?}},
+	author={Dinda, Peter and Hetland, Conor},
+	booktitle={2018 IEEE International Parallel and Distributed Processing Symposium 
+	(IPDPS)},
+	pages={589--598},
+	year={2018},
+	organization={IEEE}
+}
+
+@article{ahn2021keeping,
+	title={Keeping science on keel when software moves},
+	author={Ahn, Dong H and Baker, Allison H and Bentley, Michael and Briggs, Ian and 
+	Gopalakrishnan, Ganesh and Hammerling, Dorit M and Laguna, Ignacio and Lee, Gregory 
+	L and Milroy, Daniel J and Vertenstein, Mariana},
+	journal={Communications of the ACM},
+	volume={64},
+	number={2},
+	pages={66--74},
+	year={2021},
+	publisher={ACM New York, NY, USA}
+}
+
+@article{panchekha2015automatically,
+	title={Automatically improving accuracy for floating point expressions},
+	author={Panchekha, Pavel and Sanchez-Stern, Alex and Wilcox, James R and Tatlock, 
+	Zachary},
+	journal={ACM SIGPLAN Notices},
+	volume={50},
+	number={6},
+	pages={1--11},
+	year={2015},
+	publisher={ACM New York, NY, USA}
+}
+
+@article{dobrev2012high,
+	title={High-order curvilinear finite element methods for Lagrangian hydrodynamics},
+	author={Dobrev, Veselin A and Kolev, Tzanio V and Rieben, Robert N},
+	journal={SIAM Journal on Scientific Computing},
+	volume={34},
+	number={5},
+	pages={B606--B641},
+	year={2012},
+	publisher={SIAM}
+}
+@inproceedings{raja,
+	title={{RAJA: Portable performance for large-scale scientific applications}},
+	author={Beckingsale, David A and Burmark, Jason and Hornung, Rich and Jones, Holger 
+	and Killian, William and Kunen, Adam J and Pearce, Olga and Robinson, Peter and Ryujin, 
+	Brian S and Scogland, Thomas RW},
+	booktitle={2019 ieee/acm international workshop on performance, portability and 
+	productivity in hpc (p3hpc)},
+	pages={71--81},
+	year={2019},
+	organization={IEEE}
+}
+
+@inproceedings{bentley2019multi,
+	title={Multi-level analysis of compiler-induced variability and performance tradeoffs},
+	author={Bentley, Michael and Briggs, Ian and Gopalakrishnan, Ganesh and Ahn, Dong H 
+	and Laguna, Ignacio and Lee, Gregory L and Jones, Holger E},
+	booktitle={Proceedings of the 28th International Symposium on High-Performance 
+	Parallel and Distributed Computing},
+	pages={61--72},
+	year={2019}
+}
+
+@inproceedings{guo2020pliner,
+	title={pLiner: isolating lines of floating-point code for compiler-induced variability},
+	author={Guo, Hui and Laguna, Ignacio and Rubio-Gonz{\'a}lez, Cindy},
+	booktitle={SC20: International Conference for High Performance Computing, 
+	Networking, Storage and Analysis},
+	pages={1--14},
+	year={2020},
+	organization={IEEE}
+}
+
+@article{benz2012dynamic,
+	title={A dynamic program analysis to find floating-point accuracy problems},
+	author={Benz, Florian and Hildebrandt, Andreas and Hack, Sebastian},
+	journal={ACM SIGPLAN Notices},
+	volume={47},
+	number={6},
+	pages={453--462},
+	year={2012},
+	publisher={ACM New York, NY, USA}
+}
+
+@techreport{karlin2013lulesh,
+	title={Lulesh 2.0 updates and changes},
+	author={Karlin, Ian and Keasler, Jeff and Neely, JR},
+	year={2013},
+	institution={Lawrence Livermore National Lab (LLNL), Livermore, CA (United States)}
+}
+
+@article{IEEE754,
+	key={IEEE754},
+	journal={IEEE Std 754-2008}, 
+	title={IEEE Standard for Floating-Point Arithmetic}, 
+	year={2008},
+	volume={},
+	number={},
+	pages={1-70},
+	doi={10.1109/IEEESTD.2008.4610935}
+}
+
+@article{BF16,
+	title={Tearing apart Google’s TPU 3.0 AI coprocessor},
+	author={Teich, Paul},
+	journal={Retrieved June},
+	volume={12},
+	pages={2018},
+	year={2018}
+}
+
+@article{BF16,
+	title={Tearing apart Google’s TPU 3.0 AI coprocessor},
+	author={Teich, Paul},
+	journal={Retrieved June},
+	volume={12},
+	pages={2018},
+	year={2018}
+}
+
+@INPROCEEDINGS{IgnacioVarity,
+	author={Laguna, Ignacio},
+	booktitle={2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+	title={Varity: Quantifying Floating-Point Variations in HPC Systems Through Randomized Testing}, 
+	year={2020},
+	volume={},
+	number={},
+	pages={622-633},
+	doi={10.1109/IPDPS47924.2020.00070}}
+
+@inproceedings{sanchez2018root,
+	author = {Sanchez-Stern, Alex and Panchekha, Pavel and Lerner, Sorin and Tatlock, Zachary},
+	title = {Finding Root Causes of Floating Point Error},
+	year = {2018},
+	isbn = {9781450356985},
+	publisher = {Association for Computing Machinery},
+	url = {https://doi.org/10.1145/3192366.3192411},
+	doi = {10.1145/3192366.3192411},
+	booktitle = {Proceedings of the 39th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+	pages = {256–269},
+	series = {PLDI 2018}
+}
+
+@inproceedings{Fvotte2017VERROUA,
+	title={VERROU : a CESTAC evaluation without recompilation},
+	author={François F{\'e}votte and Bruno Lathuili{\`e}re},
+	year={2017}
+}
+
+@incollection{debasmita2021two,
+	doi = {10.1007/978-3-030-72013-1_3},
+	url = {https://doi.org/10.1007%2F978-3-030-72013-1_3},
+	year = {2021},
+	publisher = {Springer International Publishing},
+	pages = {43--63},
+	author = {Debasmita Lohar and Clothilde Jeangoudoux and Joshua Sobel and Eva Darulova and Maria Christakis},
+	title = {A Two-Phase Approach for Conditional Floating-Point Verification}
+}
+
+@inproceedings{sangeeta2021fpsan,
+author = {Chowdhary, Sangeeta and Nagarakatte, Santosh},
+title = {Parallel Shadow Execution to Accelerate the Debugging of Numerical Errors},
+year = {2021},
+isbn = {9781450385626},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3468264.3468585},
+doi = {10.1145/3468264.3468585},
+abstract = {This paper proposes a new approach for debugging errors in floating point computation by performing shadow execution with higher precision in parallel. The programmer specifies parts of the program that need to be debugged for errors. Our compiler creates shadow execution tasks, which execute on different cores and perform the computation with higher precision. We propose a novel method to execute a shadow execution task from an arbitrary memory state, which is necessary because we are creating a parallel shadow execution from a sequential program. Our approach also ensures that the shadow execution follows the same control flow path as the original program. Our runtime automatically distributes the shadow execution tasks to balance the load on the cores. Our prototype for parallel shadow execution, PFPSanitizer, provides comprehensive detection of errors while having lower performance overheads than prior approaches.},
+booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {615–626},
+numpages = {12},
+keywords = {dynamic analysis, floating point, rounding errors, FPSanitizer},
+location = {Athens, Greece},
+series = {ESEC/FSE 2021}
+}
+
+
+
+@inproceedings{marcelAFLGo2017,
+	publisher = "Association for Computing Machinery, Inc",
+	pages = "615--626",
+	editor = "Diomidis Spinellis",
+	author = {B\"{o}hme, Marcel and Pham, Van-Thuan and Nguyen, Manh-Dung and Roychoudhury, Abhik},
+	title = {Directed Greybox Fuzzing},
+	year = {2017},
+	url = {https://doi.org/10.1145/3133956.3134020},
+	doi = {10.1145/3133956.3134020},
+	booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+	series = {CCS '17}
+}
+
+@inproceedings{daniel2019Fuzzit,
+	author = {Daniel Liew and Cristian Cadar and Alastair Donaldson and J. Ryan Stinnett},
+	title = {Just Fuzz It: Solving Floating-point Constraints Using Coverage-guided Fuzzing},
+	booktitle = {European Software Engineering Conference / ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2019)},
+	year = {2019},
+	month = {8},
+	pages = {521--532},
+}
+
+@inproceedings{klees2018fuzztesting,
+	author = {Klees, George and Ruef, Andrew and Cooper, Benji and Wei, Shiyi and Hicks, Michael},
+	title = {Evaluating Fuzz Testing},
+	year = {2018},
+	url = {https://doi.org/10.1145/3243734.3243804},
+	doi = {10.1145/3243734.3243804},
+	booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+	pages = {2123–2138},
+	keywords = {security, evaluation, fuzzing},
+	series = {CCS '18}
+}
+
+@inproceedings{courbet2021nsan,
+	author = {Courbet, Clement},
+	title = {NSan: A Floating-Point Numerical Sanitizer},
+	year = {2021},
+	isbn = {9781450383257},
+	url = {https://doi.org/10.1145/3446804.3446848},
+	doi = {10.1145/3446804.3446848},
+	booktitle = {Proceedings of the 30th ACM SIGPLAN International Conference on Compiler Construction},
+	pages = {83–93},
+	keywords = {Floating Point Arithmetic, Numerical Stability, LLVM, nsan},
+	series = {CC 2021}
+}
+
+@inproceedings{chowdhary2020debugging,
+	author = {Chowdhary, Sangeeta and Lim, Jay P. and Nagarakatte, Santosh},
+	title = {Debugging and Detecting Numerical Errors in Computation with Posits},
+	year = {2020},
+	url = {https://doi.org/10.1145/3385412.3386004},
+	doi = {10.1145/3385412.3386004},
+	booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+	pages = {731–746},
+	keywords = {dynamic analysis, numerical errors, Posits},
+	series = {PLDI 2020}
+}
+
+@inproceedings{guo2020generation,
+	author = {Guo, Hui and Rubio-Gonz\'{a}lez, Cindy},
+	title = {Efficient Generation of Error-Inducing Floating-Point Inputs via Symbolic Execution},
+	year = {2020},
+	url = {https://doi.org/10.1145/3377811.3380359},
+	doi = {10.1145/3377811.3380359},
+	booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering},
+	pages = {1261–1272},
+	keywords = {roundoff errors, floating-point, catastrophic cancellation, testing, symbolic execution},
+	series = {ICSE '20}
+}
+
+@inproceedings{chiang2014search,
+	author = {Chiang, Wei-Fan and Gopalakrishnan, Ganesh and Rakamaric, Zvonimir and Solovyev, Alexey},
+	title = {Efficient Search for Inputs Causing High Floating-Point Errors},
+	year = {2014},
+	url = {https://doi.org/10.1145/2555243.2555265},
+	doi = {10.1145/2555243.2555265},
+	booktitle = {Proceedings of the 19th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+	pages = {43–52},
+	keywords = {sequential and parallel programming, guided search, floating-point error estimation methods},
+	series = {PPoPP '14}
+}
+
+@inproceedings{earl2013automatic,
+	author = {Barr, Earl T. and Vo, Thanh and Le, Vu and Su, Zhendong},
+	title = {Automatic Detection of Floating-Point Exceptions},
+	year = {2013},
+	url = {https://doi.org/10.1145/2429069.2429133},
+	doi = {10.1145/2429069.2429133},
+	booktitle = {Proceedings of the 40th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	pages = {549–560},
+	keywords = {floating-point exceptions, symbolic execution},
+	series = {POPL '13}
+}
+
+@inproceedings{andres2016lifejacket,
+	author = {N\"{o}tzli, Andres and Brown, Fraser},
+	title = {LifeJacket: Verifying Precise Floating-Point Optimizations in LLVM},
+	year = {2016},
+	url = {https://doi.org/10.1145/2931021.2931024},
+	doi = {10.1145/2931021.2931024},
+	booktitle = {Proceedings of the 5th ACM SIGPLAN International Workshop on State Of the Art in Program Analysis},
+	pages = {24–29},
+	keywords = {Verification, LLVM, SMT, Floating-point arithmetic},
+}
+
+@inproceedings{che2009rodinia,
+	title={Rodinia: A benchmark suite for heterogeneous computing},
+	author={Che, Shuai and Boyer, Michael and Meng, Jiayuan and Tarjan, David and 
+	Sheaffer, Jeremy W and Lee, Sang-Ha and Skadron, Kevin},
+	booktitle={2009 IEEE international symposium on workload characterization (IISWC)},
+	pages={44--54},
+	year={2009},
+	organization={Ieee}
+}
+
+@inproceedings{grauer2012auto,
+	title={Auto-tuning a high-level language targeted to GPU codes},
+	author={Grauer-Gray, Scott and Xu, Lifan and Searles, Robert and Ayalasomayajula, 
+	Sudhee and Cavazos, John},
+	booktitle={2012 innovative parallel computing (InPar)},
+	pages={1--10},
+	year={2012},
+	organization={Ieee}
+}
+
+@article{chetlur2014cudnn,
+	title={cudnn: Efficient primitives for deep learning},
+	author={Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, 
+	Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
+	journal={arXiv preprint arXiv:1410.0759},
+	year={2014}
+}
+
+@inproceedings{jia2014caffe,
+	title={Caffe: Convolutional architecture for fast feature embedding},
+	author={Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and 
+	Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
+	booktitle={Proceedings of the 22nd ACM international conference on Multimedia},
+	pages={675--678},
+	year={2014}
+}
+
+@inproceedings{villa2019nvbit,
+	title={Nvbit: A dynamic binary instrumentation framework for nvidia gpus},
+	author={Villa, Oreste and Stephenson, Mark and Nellans, David and Keckler, Stephen W},
+	booktitle={Proceedings of the 52nd Annual IEEE/ACM International Symposium on 
+	Microarchitecture},
+	pages={372--383},
+	year={2019}
+}
+
+@article{zou2019detecting,
+	title={Detecting floating-point errors via atomic conditions},
+	author={Zou, Daming and Zeng, Muhan and Xiong, Yingfei and Fu, Zhoulai and Zhang, Lu and Su, Zhendong},
+	journal={Proceedings of the ACM on Programming Languages},
+	volume={4},
+	number={POPL},
+	pages={1--27},
+	year={2019},
+	publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{demeure2021tagged,
+	title={Tagged error: tracing numerical error through computations},
+	author={Demeure, Nestor and Chevalier, C{\'e}dric and Denis, Christophe and Dossantos-Uzarralde, Pierre},
+	booktitle={2021 IEEE 28th Symposium on Computer Arithmetic (ARITH)},
+	pages={9--16},
+	year={2021},
+	organization={IEEE}
+}
+
+@article{jezequel2008cadna,
+	title={CADNA: a library for estimating round-off error propagation},
+	author={J{\'e}z{\'e}quel, Fabienne and Chesneaux, Jean-Marie},
+	journal={Computer Physics Communications},
+	volume={178},
+	number={12},
+	pages={933--955},
+	year={2008},
+	publisher={Elsevier}
+}
+
+@inproceedings{surineni2017understanding,
+	title={Understanding the performance-accuracy tradeoffs of floating-point arithmetic on GPUs},
+	author={Surineni, Sruthikesh and Gu, Ruidong and Nguyen, Huyen and Becchi, Michela},
+	booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)},
+	pages={207--218},
+	year={2017},
+	organization={IEEE}
+}
+
+@inproceedings{kotipalli2019ampt,
+	title={AMPT-GA: automatic mixed precision floating point tuning for GPU applications},
+	author={Kotipalli, Pradeep V and Singh, Ranvijay and Wood, Paul and Laguna, Ignacio and Bagchi, Saurabh},
+	booktitle={Proceedings of the ACM International Conference on Supercomputing},
+	pages={160--170},
+	year={2019}
+}
+
+----
+
+@InProceedings{Cal05,
+author="Costan, A.
+and Gaubert, S.
+and Goubault, E.
+and Martel, M.
+and Putot, S.",
+editor="Etessami, Kousha
+and Rajamani, Sriram K.",
+title="A Policy Iteration Algorithm for Computing Fixed Points in Static Analysis of Programs",
+booktitle="Computer Aided Verification",
+year="2005",
+publisher="Springer Berlin Heidelberg",
+}
+
+
+@INPROCEEDINGS{floatsmith,
+  author={Lam, Michael O. and Vanderbruggen, Tristan and Menon, Harshitha and Schordan, Markus},
+  booktitle={2019 IEEE/ACM 3rd International Workshop on Software Correctness for HPC Applications (Correctness)}, 
+  title={Tool Integration for Source-Level Mixed Precision}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={27-35},
+  doi={10.1109/Correctness49594.2019.00009}}
+  
+@incollection{bailey-borwein-stodden,
+title = {{Facilitating Reproducibility in Scientific Computing: Principles and Practice}},
+author = {David H. Bailey and Jonathan M. Borwein and Victoria Stodden},
+editor ={Harald Atmanspacher and Sabine Maasen},
+doi = {https://doi.org/10.1002/9781118865064.ch9},
+booktitle = {Reproducibility: Principles, Problems, Practices, and Prospects},
+pages = {205-231},
+year = 2016}
+
+@INPROCEEDINGS{quad-double-bailey,
+author={Y. {Hida} and X. S. {Li} and D. H. {Bailey}},
+booktitle={Proceedings 15th IEEE Symposium on Computer Arithmetic. ARITH-15 2001},
+title={{Algorithms for quad-double precision floating point arithmetic}},
+year={2001}, volume={}, number={}, pages={155-162},
+}
+
+@inproceedings{flover-darulova,
+author = {Becker, Heiko and Zyuzin, Nikita and Monat, Raphael and Darulova, Eva and Myreen, Magnus and Fox, Anthony},
+year = {2018},
+month = {10},
+pages = {1-10},
+title = {{A Verified Certificate Checker for Finite-Precision Error Bounds in Coq and HOL4}},
+booktitle = {FMCAD},
+doi = {10.23919/FMCAD.2018.8603019}
+}
+@inproceedings{eva-rel-error,
+author = {Izycheva, Anastasiia and Darulova, Eva},
+title = {{On Sound Relative Error Bounds for Floating-Point Arithmetic}},
+year = {2017},
+isbn = {9780983567875},
+publisher = {FMCAD Inc},
+address = {Austin, Texas},
+booktitle = {Proceedings of the 17th Conference on Formal Methods in Computer-Aided Design},
+pages = {15–22},
+numpages = {8},
+location = {Vienna, Austria},
+series = {FMCAD ’17}
+}
+
+
+@INPROCEEDINGS{harrison-hol99,
+        crossref        = "hol99",
+        author          = "John Harrison",
+        title           = "A Machine-Checked Theory of Floating Point
+                           Arithmetic",
+        pages           = "113--130"}
+
+@PROCEEDINGS{hol99,
+        editor          = "Yves Bertot and Gilles Dowek and Andr{\'e}
+                           Hirschowitz and Christine Paulin and
+                           Laurent Th{\'e}ry",
+        booktitle       = "Theorem Proving in Higher Order Logics:
+                           12th International Conference, TPHOLs'99",
+        series          = "Lecture Notes in Computer Science",
+        volume          = 1690,
+        address         = "Nice, France",
+        date            = "September 1999",
+        year            = 1999,
+        publisher       = "Springer-Verlag"}
+	
+@book{automatic-diff-hovland,
+title = {{Advances in Automatic Differentiation}},
+editor = { {C.H.} Bischof  and {H.M.} Buker and Paul Hovland and {U.} Naumann and {J.} Utke},
+note = {ISBN : 978-3-540-68935-5},
+year  = 2008,
+publisher = {Springer}}
+
+
+@InProceedings{munoz-gappa-pvs,
+author="Goodloe, Alwyn E.
+and Mu{\~{n}}oz, C{\'e}sar
+and Kirchner, Florent
+and Correnson, Lo{\"i}c",
+editor="Brat, Guillaume
+and Rungta, Neha
+and Venet, Arnaud",
+title="Verification of Numerical Programs: From Real Numbers to Floating Point Numbers",
+booktitle="NASA Formal Methods",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="441--446",
+isbn="978-3-642-38088-4"
+}
+
+
+
+@article{atomic-condition-su,
+  author    = {Daming Zou and
+               Muhan Zeng and
+               Yingfei Xiong and
+               Zhoulai Fu and
+               Lu Zhang and
+               Zhendong Su},
+  title     = {{Detecting floating-point errors via atomic conditions}},
+  journal   = {{PACMPL}},
+  volume    = {4},
+  number    = {{POPL}},
+  pages     = {60:1--60:27},
+  year      = {2020},
+  url       = {https://doi.org/10.1145/3371128},
+  doi       = {10.1145/3371128},
+  timestamp = {Mon, 13 Jan 2020 08:55:29 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/pacmpl/ZouZXFZS20},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{MullerEtAl2009:HandBook,
+  title = {{Handbook of Floating-Point Arithmetic}},
+  author = {Muller, Jean-Michel and Brisebarre, Nicolas and de
+        Dinechin, Florent and Jeannerod, Claude-Pierre and
+            Lef{\`e}vre, Vincent and Melquiond, Guillaume and Revol,
+        Nathalie and Stehl{\'e}, Damien and Torres, Serge},
+  language = {{A}nglais},
+  publisher = {{B}irkhauser {B}oston },
+  year = {2009},
+  keywords = {textbook}
+}
+
+@article{schwarzlander-fft,
+author = {Jr, Earl and Saleh, Hani},
+year = {2012},
+month = {03},
+pages = {284 - 288},
+title = {{FFT Implementation with Fused Floating-Point Operations}},
+volume = {61},
+journal = {Computers, IEEE Transactions on},
+doi = {10.1109/TC.2010.271}
+}
+
+@article{aiken-math-dot-h,
+  author    = {Wonyeol Lee and
+               Rahul Sharma and
+               Alex Aiken},
+  title     = {{On automatically proving the correctness of math.h implementations}},
+  journal   = {{PACMPL}},
+  volume    = {2},
+  number    = {{POPL}},
+  pages     = {47:1--47:32},
+  year      = {2018},
+  url       = {https://doi.org/10.1145/3158135},
+  doi       = {10.1145/3158135},
+  timestamp = {Tue, 06 Nov 2018 12:51:05 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/pacmpl/Lee0A18},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Shannon1948,
+  added-at = {2018-06-03T07:16:08.000+0200},
+  author = {Shannon, Claude Elwood},
+  biburl = {https://www.bibsonomy.org/bibtex/2991e1d12fe529405c363bd2aad283d7b/achakraborty},
+  doi = {10.1002/j.1538-7305.1948.tb01338.x},
+  interhash = {754130207906fcec16a53d330eeff348},
+  intrahash = {991e1d12fe529405c363bd2aad283d7b},
+  journal = {The Bell System Technical Journal},
+  keywords = {ieee information-theory paper},
+  month = {7},
+  number = 3,
+  pages = {379--423},
+  publisher = {Nokia Bell Labs},
+  timestamp = {2018-06-03T07:17:55.000+0200},
+  title = {{A Mathematical Theory of Communication}},
+  url = {https://ieeexplore.ieee.org/document/6773024/},
+  volume = 27,
+  year = 1948
+}
+
+
+
+@misc{symengine,
+key = {symengine},
+title = {{SymEngine}},
+year = 2019,
+howpublished = {\url{https://github.com/symengine/symengine/}}}
+
+@misc{MD,
+key = {Molecular Dynamics},
+title = {{Molecular Dynamics}},
+howpublished = {\url{https://people.sc.fsu.edu/~jburkardt/py\_src/md/md.html}}}
+
+
+@inproceedings{verificarlo,
+  author    = {Christophe Denis and
+               Pablo de Oliveira Castro and
+               Eric Petit},
+  title     = {{Verificarlo: Checking Floating Point Accuracy through Monte Carlo
+               Arithmetic}},
+  booktitle = {23nd {IEEE} Symposium on Computer Arithmetic, {ARITH} 2016, Silicon
+               Valley, CA, USA, July 10-13, 2016},
+  pages     = {55--62},
+  year      = {2016},
+  crossref  = {DBLP:conf/arith/2016},
+  url       = {https://doi.org/10.1109/ARITH.2016.31},
+  doi       = {10.1109/ARITH.2016.31},
+  timestamp = {Wed, 16 Oct 2019 14:14:53 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/arith/DenisCP16},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@proceedings{DBLP:conf/arith/2016,
+  editor    = {Paolo Montuschi and
+               Michael J. Schulte and
+               Javier Hormigo and
+               Stuart F. Oberman and
+               Nathalie Revol},
+  title     = {{23nd IEEE Symposium on Computer Arithmetic, ARITH 2016, Silicon
+               Valley, CA, USA, July 10-13, 2016}},
+  publisher = {{IEEE} Computer Society},
+  year      = {2016},
+  url       = {https://ieeexplore.ieee.org/xpl/conhome/7562813/proceeding},
+  isbn      = {978-1-5090-1616-7},
+  timestamp = {Wed, 16 Oct 2019 14:14:53 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/arith/2016},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{rocco-solver-nfm-2019,
+  author    = {Rocco Salvia and
+               Laura Titolo and
+               Marco A. Feli{\'{u}} and
+               Mariano M. Moscato and
+               C{\'{e}}sar A. Mu{\~{n}}oz and
+               Zvonimir Rakamari\'c},
+  title     = {{A Mixed Real and Floating-Point Solver}},
+  booktitle = {{NASA} Formal Methods - 11th International Symposium, {NFM} 2019,
+               Houston, TX, USA, May 7-9, 2019, Proceedings},
+  pages     = {363--370},
+  year      = {2019},
+  crossref  = {DBLP:conf/nfm/2019},
+  url       = {https://doi.org/10.1007/978-3-030-20652-9\_25},
+  doi       = {10.1007/978-3-030-20652-9\_25},
+  timestamp = {Tue, 28 May 2019 13:50:10 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/nfm/SalviaTFMMR19},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@proceedings{DBLP:conf/nfm/2019,
+  editor    = {Julia M. Badger and
+               Kristin Yvonne Rozier},
+  title     = {{NASA Formal Methods - 11th International Symposium, NFM 2019,
+               Houston, TX, USA, May 7-9, 2019, Proceedings}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11460},
+  publisher = {Springer},
+  year      = {2019},
+  url       = {https://doi.org/10.1007/978-3-030-20652-9},
+  doi       = {10.1007/978-3-030-20652-9},
+  isbn      = {978-3-030-20651-2},
+  timestamp = {Tue, 28 May 2019 13:48:14 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/nfm/2019},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:conf/sas/JacqueminPV18,
+  author    = {Maxime Jacquemin and
+               Sylvie Putot and
+               Franck V{\'{e}}drine},
+  title     = {{A Reduced Product of Absolute and Relative Error Bounds for Floating-Point
+               Analysis}},
+  booktitle = {Static Analysis - 25th International Symposium, {SAS} 2018, Freiburg,
+               Germany, August 29-31, 2018, Proceedings},
+  pages     = {223--242},
+  year      = {2018},
+  crossref  = {DBLP:conf/sas/2018},
+  url       = {https://doi.org/10.1007/978-3-319-99725-4\_15},
+  doi       = {10.1007/978-3-319-99725-4\_15},
+  timestamp = {Tue, 14 May 2019 10:00:52 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/sas/JacqueminPV18},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@proceedings{DBLP:conf/sas/2018,
+  editor    = {Andreas Podelski},
+  title     = {{Static Analysis - 25th International Symposium, {SAS} 2018, Freiburg,
+               Germany, August 29-31, 2018, Proceedings}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11002},
+  publisher = {Springer},
+  year      = {2018},
+  url       = {https://doi.org/10.1007/978-3-319-99725-4},
+  doi       = {10.1007/978-3-319-99725-4},
+  isbn      = {978-3-319-99724-7},
+  timestamp = {Tue, 14 May 2019 10:00:52 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/sas/2018},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:conf/vmcai/TitoloFMM18,
+  author    = {Laura Titolo and
+               Marco A. Feli{\'{u}} and
+               Mariano M. Moscato and
+               C{\'{e}}sar A. Mu{\~{n}}oz},
+  title     = {{An Abstract Interpretation Framework for the Round-Off Error Analysis
+               of Floating-Point Programs}},
+  booktitle = {Verification, Model Checking, and Abstract Interpretation - 19th International
+               Conference, {VMCAI} 2018, Los Angeles, CA, USA, January 7-9, 2018,
+               Proceedings},
+  pages     = {516--537},
+  year      = {2018},
+  crossref  = {DBLP:conf/vmcai/2018},
+  url       = {https://doi.org/10.1007/978-3-319-73721-8\_24},
+  doi       = {10.1007/978-3-319-73721-8\_24},
+  timestamp = {Tue, 14 May 2019 10:00:43 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/vmcai/TitoloFMM18},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@proceedings{DBLP:conf/vmcai/2018,
+  editor    = {Isil Dillig and
+               Jens Palsberg},
+  title     = {{Verification, Model Checking, and Abstract Interpretation - 19th International
+               Conference, {VMCAI} 2018, Los Angeles, CA, USA, January 7-9, 2018,
+               Proceedings}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10747},
+  publisher = {Springer},
+  year      = {2018},
+  url       = {https://doi.org/10.1007/978-3-319-73721-8},
+  doi       = {10.1007/978-3-319-73721-8},
+  isbn      = {978-3-319-73720-1},
+  timestamp = {Tue, 14 May 2019 10:00:43 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/vmcai/2018},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:conf/fm/MoscatoTFM19,
+  author    = {Mariano M. Moscato and
+               Laura Titolo and
+               Marco A. Feli{\'{u}} and
+               C{\'{e}}sar A. Mu{\~{n}}oz},
+  title     = {{Provably Correct Floating-Point Implementation of a Point-in-Polygon
+               Algorithm}},
+  booktitle = {Formal Methods - The Next 30 Years - Third World Congress, {FM} 2019,
+               Porto, Portugal, October 7-11, 2019, Proceedings},
+  pages     = {21--37},
+  year      = {2019},
+  crossref  = {DBLP:conf/fm/2019},
+  url       = {https://doi.org/10.1007/978-3-030-30942-8\_3},
+  doi       = {10.1007/978-3-030-30942-8\_3},
+  timestamp = {Mon, 23 Sep 2019 13:52:37 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/fm/MoscatoTFM19},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@proceedings{DBLP:conf/fm/2019,
+  editor    = {Maurice H. ter Beek and
+               Annabelle McIver and
+               Jos{\'{e}} N. Oliveira},
+  title     = {{Formal Methods - The Next 30 Years - Third World Congress, FM 2019,
+               Porto, Portugal, October 7-11, 2019, Proceedings}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11800},
+  publisher = {Springer},
+  year      = {2019},
+  url       = {https://doi.org/10.1007/978-3-030-30942-8},
+  doi       = {10.1007/978-3-030-30942-8},
+  isbn      = {978-3-030-30941-1},
+  timestamp = {Mon, 23 Sep 2019 13:47:30 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/fm/2019},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{excel-optimization-ms-support,
+author = {Microsoft Support},
+title = {{Floating-point arithmetic may give inaccurate results in Excel}},
+note = {Last updated April 17, 2018},
+year = 2018,
+url = {https://support.microsoft.com/en-us/help/78113/floating-point-arithmetic-may-give-inaccurate-results-in-excel}
+}
+
+@inproceedings{pvs-global,
+  title={{A formally verified generic branching algorithm for global optimization}},
+  author={Narkawicz, Anthony and Munoz, C{\'e}sar},
+  booktitle={Working Conference on Verified Software: Theories, Tools, and Experiments},
+  pages={326--343},
+  year={2013},
+  organization={Springer}
+}
+
+
+@inproceedings{coq-global,
+  title={{Certified, efficient and sharp univariate Taylor models in Coq}},
+  author={Martin-Dorel, {\'E}rik and Rideau, Laurence and Th{\'e}ry, Laurent and Mayero, Micaela and Pasca, Ioana},
+  booktitle={Symbolic and Numeric Algorithms for Scientific Computing (SYNASC), 2013 15th International Symposium on},
+  pages={193--200},
+  year={2013},
+  organization={IEEE}
+}
+
+@online{TOPLAS-FPTaylor-Results-Table,
+key = {TOPLAS FPTaylor Results Table},
+author = {Solovyev, Alexey},
+title = {{TOPLAS FPTaylor Results Table}},
+optnote = {Full data for FPTaylor benchmarking.},
+url = {http://tinyurl.com/TOPLAS-FPTaylor-Results-Table},
+year={2017},
+lastaccessed={October 10, 2017},
+}
+
+@online{Tridiagonal,
+author = {Surjanovic, Sonja and Bingham, Derek},
+title = {{Trid Function}},
+key = {Trid Function},
+label = {Tridiagonal Examples},
+note = {Tridiagonal Examples.},
+url = {http://www.sfu.ca/\%7Essurjano/trid.html},
+year={2017},
+lastaccessed={October 10, 2017},
+}
+
+@online{Legendre,
+author={Weisstein, Eric},
+title={{Legendre Polynomial -- From Wolfram MathWorld}},
+label={legendre_n},
+optnote = {The legendre\_n benchmarks are the nth Legendre polynomials.},
+url = {http://mathworld.wolfram.com/LegendrePolynomial.html},
+year={2017},
+lastaccessed={October 13, 2017},
+}
+
+% TODO
+@online{Chebyschev,
+author={Weisstein, Eric},
+title={{Chebyschev Polynomial of the First Kind -- From Wolfram MathWorld}},
+key={Chebyschev Polynomial of the First Kind -- From Wolfram MathWorld},
+label={cheb_n},
+optnote={The cheb\_n benchmarks are the nth Chebyschev polynomials of the first kind},
+url = {http://mathworld.wolfram.com/ChebyshevPolynomialoftheFirstKind.html},
+year={2017},
+lastaccessed={October 10, 2017},
+}
+
+
+
+
+@online{gaol,
+  key =		 {Gaol},
+  author = {Goualard, Fr\'{e}d\'{e}ric},
+  title =	 {{GAOL (Not Just Another Interval Library)}},
+url =		 {http://frederic.goualard.net/\#research-software},
+  urldate =	 {07.01.2016},
+  lastaccessed = {October 13, 2017},
+  year =	 2017
+}
+
+@inproceedings{pldi16-bit-level-fp-verification,
+  author =	 {Wonyeol Lee and Rahul Sharma and Alex Aiken},
+  title =	 {{Verifying Bit-Manipulations of Floating-Point}},
+  booktitle =	 {Proceedings of the 37th annual ACM SIGPLAN
+                  conference on Programming Language Design and
+                  Implementation, {PLDI} 2016},
+  pages = {70--84},
+  year =	 2016,
+}
+
+@inproceedings{dreal,
+  author =	 {Gao, Sicun and Kong, Soonho and Clarke, Edmund M.},
+  title = {{dReal: An SMT Solver for Nonlinear Theories over the Reals}},
+  booktitle = {Proceedings of the 24th International Conference on Automated
+    Deduction, CADE 2013},
+  year =	 2013,
+  pages =	 {208--214},
+}
+
+
+@incollection{precisa,
+  doi = {10.1007/978-3-319-73721-8_24},
+  url = {https://doi.org/10.1007/978-3-319-73721-8\_24},
+  year = {2017},
+  month = dec,
+  publisher = {Springer International Publishing},
+  pages = {516--537},
+  author = {Laura Titolo and Marco A. Feli{\'{u}} and Mariano Moscato and C{\'{e}}sar A. Mu{\~{n}}oz},
+  title = {{An Abstract Interpretation Framework for the Round-Off Error Analysis of Floating-Point Programs}},
+  booktitle = {Lecture Notes in Computer Science}
+}
+
+
+
+@misc{gelpia-github,
+key = {Gelpia},
+title = {{Gelpia: A Global Optimizer for Real Functions}},
+url = {https://github.com/soarlab/gelpia},
+lastaccessed = {October 13, 2017},
+year      = {2017},
+}
+
+
+
+@misc{darulova-phd,
+key = {Numerics},
+title = {{Programming with Numerical Uncertainities}},
+url = {https://people.mpi-sws.org/~eva/papers/thesis.pdf},
+year      = {2014},
+}
+
+
+@inproceedings{fm15-fptaylor,
+  author =	 {Alexey Solovyev and Charles Jacobsen and Zvonimir
+                  Rakamari\'c and Ganesh Gopalakrishnan},
+  title =	 {{Rigorous Estimation of Floating-Point Round-off
+                  Errors with Symbolic Taylor Expansions}},
+  booktitle =	 {Proceedings of the 20th International Symposium on
+                  Formal Methods Formal, FM 2015},
+  year =	 2015,
+  pages =	 {532--550},
+}
+
+@article{DBLP:journals/jar/BoldoJLM15,
+  author    = {Sylvie Boldo and
+               Jacques{-}Henri Jourdan and
+               Xavier Leroy and
+               Guillaume Melquiond},
+  title     = {{Verified Compilation of Floating-Point Computations}},
+  journal   = {Journal of Automated Reasoning (JAR)},
+  volume    = {54},
+  number    = {2},
+  pages     = {135--163},
+  year      = {2015},
+  url       = {http://dx.doi.org/10.1007/s10817-014-9317-x},
+  doi       = {10.1007/s10817-014-9317-x},
+  timestamp = {Wed, 07 Jan 2015 11:24:17 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/jar/BoldoJLM15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@online{mindless-kahan,
+author = {Kahan, William},
+title = {{How Futile Are Mindless Assessments of Roundoff
+       in Floating-Point Computation?}},
+url = {https://people.eecs.berkeley.edu/~wkahan/Mindless.pdf},
+year = 2006,
+lastaccessed = {October 13, 2017},
+}
+
+@inproceedings{DBLP:conf/popl/AndryscoJL16,
+  author    = {Marc Andrysco and
+               Ranjit Jhala and
+               Sorin Lerner},
+  title     = {{Printing Floating-Point Numbers: A Faster, Always Correct Method}},
+  booktitle = {Proceedings of the 43rd Annual {ACM} {SIGPLAN-SIGACT} Symposium on
+               Principles of Programming Languages (POPL)},
+  pages     = {555--567},
+  year      = {2016},
+  publisher = {ACM},
+  url       = {http://doi.acm.org/10.1145/2837614.2837654},
+  doi       = {10.1145/2837614.2837654},
+  timestamp = {Wed, 09 Mar 2016 08:11:59 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/popl/AndryscoJL16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+%   crossref  = {DBLP:conf/popl/2016},
+
+% cited
+proceedings{DBLP:conf/popl/2016,
+  opteditor    = {Rastislav Bod{\'{\i}}k and
+               Rupak Majumdar},
+  title     = {{Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on
+               Principles of Programming Languages, POPL 2016}},
+  publisher = {{ACM}},
+  year      = {2016},
+  url       = {http://dl.acm.org/citation.cfm?id=2837614},
+  isbn      = {978-1-4503-3549-2},
+  timestamp = {Wed, 09 Mar 2016 08:11:59 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/popl/2016},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@techreport{fptaylor-techreport,
+    author = {Alexey Solovyev and Charles Jacobsen and Zvonimir Rakamari\'c and
+      Ganesh Gopalakrishnan},
+    title = {{Rigorous Estimation of Floating-Point Round-off Errors with
+      Symbolic Taylor Expansions}},
+    institution = {School of Computing, University of Utah},
+    year = {2015},
+    number = {UUCS-15-001}
+}
+
+% cited
+incollection{cav-rel-error,
+  year={2014},
+  isbn={978-3-319-08866-2},
+  booktitle={Computer Aided Verification},
+  volume={8559},
+  series={Lecture Notes in Computer Science},
+  opteditor={Biere, Armin and Bloem, Roderick},
+  doi={10.1007/978-3-319-08867-9_18},
+  title={{Verifying Relative Error Bounds Using Symbolic Simulation}},
+  publisher={Springer International Publishing},
+  author={Bingham, Jesse and Leslie-Hurd, Joe},
+  pages={277-292},
+  language={English}
+}
+
+incollection{cav-rel-error,
+  year={2014},
+  isbn={978-3-319-08866-2},
+  booktitle={CAV 2014},
+  volume={8559},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Biere, Armin and Bloem, Roderick},
+  doi={10.1007/978-3-319-08867-9_18},
+  title={{Verifying Relative Error Bounds Using Symbolic Simulation}},
+  publisher={Springer International Publishing},
+  author={Bingham, Jesse and Leslie-Hurd, Joe},
+  pages={277-292},
+  language={English}
+}
+@incollection{cav-rel-error,
+  author={Bingham, Jesse
+  and Leslie-Hurd, Joe},
+  opteditor={Biere, Armin
+  and Bloem, Roderick},
+  title={{Verifying Relative Error Bounds Using Symbolic Simulation}},
+  bookTitle={Proceedings of the 26th International Conference on Computer Aided Verification (CAV)},
+  year={2014},
+  publisher={Springer},
+  optaddress={Cham},
+  pages={277--292},
+  isbn={978-3-319-08867-9},
+  doi={10.1007/978-3-319-08867-9_18},
+  url={https://doi.org/10.1007/978-3-319-08867-9_18},
+}
+
+% cited
+inproceedings{herbie,
+  author = {Panchekha, Pavel and Sanchez-Stern, Alex and Wilcox, James R. and
+                  Tatlock, Zachary},
+  title = {{Automatically Improving Accuracy for Floating Point Expressions}},
+  booktitle = {PLDI 2015},
+  series = {PLDI '15},
+  publisher = {ACM},
+  year = {2015},
+  paper = {},
+  puburl = {},
+  project = {},
+  note = {to appear \url{http://herbie.uwplse.org/}}
+}
+
+inproceedings{herbie,
+  author = {Panchekha, Pavel and Sanchez-Stern, Alex and Wilcox, James R. and
+                  Tatlock, Zachary},
+  title = {{Automatically Improving Accuracy for Floating Point Expressions}},
+  booktitle = {PLDI 2015},
+  publisher = {ACM},
+  year = {2015},
+  paper = {},
+  puburl = {},
+  project = {},
+}
+
+@inproceedings{herbie,
+  author = {Panchekha, Pavel and Sanchez-Stern, Alex and Wilcox, James R. and Tatlock, Zachary},
+  title = {{Automatically Improving Accuracy for Floating Point Expressions}},
+  booktitle = {Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation, {PLDI} 2015},
+  year = {2015},
+  isbn = {978-1-4503-3468-6},
+  location = {Portland, OR, USA},
+  pages = {1--11},
+  url = {http://doi.acm.org/10.1145/2737924.2737959},
+  doi = {10.1145/2737924.2737959},
+  acmid = {2737959},
+  publisher = {ACM},
+  optaddress = {New York, NY, USA},
+} 
+
+% cited
+inproceedings{ase2014-ghilrr,
+  author = {Dimitra Giannakopoulou and Falk Howar and Malte Isberner and Todd Lauderdale
+    and Zvonimir Rakamari\'c and Vishwanath Raman},
+  title = {{Taming Test Inputs for Separation Assurance}},
+  booktitle = {Proceedings of the 29th IEEE/ACM International Conference on Automated
+    Software Engineering (ASE)},
+  publisher = {ACM},
+  year = {2014},
+  pages = {373--384},
+}
+
+@inproceedings{ase2014-ghilrr,
+  author = {Dimitra Giannakopoulou and Falk Howar and Malte Isberner and Todd Lauderdale
+    and Zvonimir Rakamari\'c and Vishwanath Raman},
+  title = {{Taming Test Inputs for Separation Assurance}},
+  booktitle = {Proceedings of the 29th IEEE/ACM International Conference on Automated
+    Software Engineering, {ASE} 2014},
+  publisher = {ACM},
+  optaddress = {New York, NY, USA},
+  year = {2014},
+  pages = {373--384},
+}
+
+% cited
+incollection{smack,
+  year={2014},
+  isbn={978-3-319-08866-2},
+  booktitle={Computer Aided Verification},
+  volume={8559},
+  series={Lecture Notes in Computer Science},
+  opteditor={Biere, Armin and Bloem, Roderick},
+  doi={10.1007/978-3-319-08867-9_7},
+  title={{SMACK: Decoupling Source Language Details from Verifier Implementations}},
+  publisher={Springer International Publishing},
+  author={Rakamari{\'{c}}, Zvonimir and Emmi, Michael},
+  pages={106-113},
+  language={English}
+}
+
+@incollection{smack,
+  year={2014},
+  isbn={978-3-319-08866-2},
+  booktitle={Computer Aided Verification, CAV 2014},
+  volume={8559},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Biere, Armin and Bloem, Roderick},
+  doi={10.1007/978-3-319-08867-9_7},
+  title={{SMACK: Decoupling Source Language Details from Verifier Implementations}},
+  publisher={Springer International Publishing},
+  author={Rakamari{\'{c}}, Zvonimir and Emmi, Michael},
+  pages={106-113},
+  language={English}
+}
+
+% cited
+@article{fp-constraint,
+  year={2014},
+  issn={0928-8910},
+  journal={Automated Software Engineering},
+  doi={10.1007/s10515-014-0154-2},
+  title={{Verifying Floating-Point Programs with Constraint Programming and
+         Abstract Interpretation Techniques}},
+  publisher={Springer US},
+  author={Ponsini, Olivier and Michel, Claude and Rueher, Michel},
+  pages={1-27},
+  language={English}
+}
+
+@misc{patriot-failure,
+  key = "patriot-failure",
+  note = {Failure of the Patriot Missle due to Floating-Point Error
+        Accumulation.
+	    \url{http://www.ima.umn.edu/~arnold/455.f96/disasters.html}}
+}
+
+@misc{vancouver-stock-exchange,
+  key = "vancouver-stock-exchange",
+  note = {Floating-Point errors Lead to Lost Value in the Stock Market.
+          \url{http://en.wikipedia.org/wiki/Vancouver_Stock_Exchange}}
+}
+
+@inproceedings{taufer-gpu,
+  author={Taufer, M. and Padron, O. and Saponaro, P. and Patel, S.},
+  booktitle={IPDPS},
+title={{Improving numerical reproducibility and stability in large-scale numerical simulations on GPUs}},
+year={2010},
+month=apr,
+pages={1-9},
+ISSN={1530-2075},
+}
+
+inproceedings{taufer-gpu,
+  author={Taufer, M. and Padron, O. and Saponaro, P. and Patel, S.},
+  booktitle={IPDPS},
+  title={{Improving numerical reproducibility and stability in large-scale numerical simulations on GPUs}},
+  year={2010},
+  month={April},
+  pages={1-9},
+  ISSN={1530-2075}
+}
+
+
+% TODO
+@InProceedings{cousot-astree,
+   author =    {Cousot, Patrick and  Cousot, Radhia and Feret, Jer\^{o}me and Mauborgne, Laurent
+                and Min\'e, Antoine and Monniaux, David and Rival, Xavier},
+   title =     {{The ASTR\'EE Analyser}},
+   pages =     {21--30},
+   booktitle = {Proceedings of the 14th European Symposium on Programming Languages and Systems (ESOP)},
+   series =    {Lecture Notes in Computer Science},
+   opteditor =    {M{.}~Sagiv},
+   volume =    {3444},
+   publisher = {Springer},
+   year =      {2005},
+}
+
+
+% cited
+incollection{sound-fp-polyhedra,
+  year={2008},
+  isbn={978-3-540-89329-5},
+  booktitle={Programming Languages and Systems},
+  volume={5356},
+  series={Lecture Notes in Computer Science},
+  opteditor={Ramalingam, G.},
+  title={{A Sound Floating-Point Polyhedra Abstract Domain}},
+  publisher={Springer Berlin Heidelberg},
+  author={Chen, Liqian and Min\'e, Antoine and Cousot, Patrick},
+  pages={3-18},
+  language={English}
+}
+
+% TODO
+@inproceedings{sound-fp-polyhedra,
+  author={Chen, Liqian and Min\'{e}, Antoine and Cousot, Patrick},
+  title={{A Sound Floating-Point Polyhedra Abstract Domain}},
+  bookTitle={Programming Languages and Systems: 6th Asian Symposium, {APLAS} 2008},
+  year={2008},
+  publisher={Springer},
+  optaddress={Berlin, Heidelberg},
+  pages={3--18}
+}
+
+% cited
+@online{openopt,
+  author = {OpenOpt},
+  title = {{OpenOpt: Universal Numerical Optimization Package}},
+  url = {http://openopt.org},
+  lastaccessed = {October 13, 2017},
+  year={2017},
+}
+
+% cited
+@book{mikusinski2002introduction,
+  title={{An Introduction to Multivariable Analysis from Vector to Manifold}},
+  author={Mikusinski, Piotr and Taylor, Michael},
+  isbn={9780817642341},
+  lccn={20052613},
+  year={2002},
+  publisher={Birkh{\"a}user Boston}
+}
+
+% cited
+@article{globsol,
+ author = {Kearfott, R. Baker},
+ title = {{GlobSol User Guide}},
+ journal = {Optimization Methods Software},
+ issue_date = {August 2009},
+ volume = {24},
+ number = {4-5},
+ year = {2009},
+ issn = {1055-6788},
+ pages = {687--708},
+ numpages = {22},
+ publisher = {Taylor \& Francis, Inc.},
+ optaddress = {Bristol, PA, USA},
+}
+
+
+@article{taylorforms,  
+  author={Neumaier, Arnold},
+  title={{Taylor Forms---Use and Limits}},
+  journal={Reliable Computing},
+  year={2003},
+  month={Feb},
+  volume={9},
+  number={1},
+  pages={43--79},
+  issn={1573-1340},
+  doi={10.1023/A:1023061927787},
+  url={https://doi.org/10.1023/A:1023061927787}
+}
+
+@inproceedings{cousot-abstract,
+ author = {Cousot, Patrick and Cousot, Radhia},
+ title = {{Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints}},
+ booktitle = {Proceedings of the 4th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages (POPL)},
+ year = {1977},
+ location = {Los Angeles, California},
+ pages = {238--252},
+ numpages = {15},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% cited
+@book{interval,
+  title={{Interval analysis}},
+  author={Moore, R.E.},
+  lccn={lc66022090},
+  series={Prentice-Hall series in automatic computation},
+  year={1966},
+  publisher={Prentice-Hall}
+}
+
+% cited
+article{affine,
+    author = {Jorge Stolfi and Luiz H. de Figueiredo},
+    title = {{An Introduction to Affine Arithmetic}},
+    year = {2003},
+    journal = {TEMA Tend. Mat. Apl. Comput.},
+    volume = {4},
+    number = {3},
+    pages = {297--312}
+}
+
+@article{affine,
+    author = {Jorge Stolfi and Luiz H. de Figueiredo},
+    title = {{An Introduction to Affine Arithmetic}},
+    journal = {TEMA Trends in Applied and Computational Mathematics},
+    year = {2003},
+    volume = {4},
+    number = {3},
+    pages = {297--312},
+}
+
+%cited
+% TODO
+@article{DBLP:journals/sttt/DamoucheMC17,
+  author    = {Nasrine Damouche and
+               Matthieu Martel and
+               Alexandre Chapoutot},
+  title     = {{Improving the Numerical Accuracy of Programs By Automatic Transformation}},
+  journal   = {International Journal on Software Tools for Technology Transfer (STTT)},
+  volume    = {19},
+  number    = {4},
+  pages     = {427--448},
+  year      = {2017},
+  url       = {https://doi.org/10.1007/s10009-016-0435-0},
+  doi       = {10.1007/s10009-016-0435-0},
+  timestamp = {Wed, 05 Jul 2017 14:44:18 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/sttt/DamoucheMC17},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% cited
+inproceedings{martel-transformation,
+ author = {Martel, Matthieu},
+ title = {{Program Transformation for Numerical Precision}},
+ booktitle = {Proceedings of the 2009 ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation},
+ series = {PEPM '09},
+ year = {2009},
+ isbn = {978-1-60558-327-3},
+ location = {Savannah, GA, USA},
+ pages = {101--110},
+ numpages = {10},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+@inproceedings{martel-transformation,
+ author = {Martel, Matthieu},
+ title = {{Program Transformation for Numerical Precision}},
+ booktitle = {Proceedings of the 2009 ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation, {PEPM} 2009},
+ year = {2009},
+ isbn = {978-1-60558-327-3},
+ location = {Savannah, GA, USA},
+ pages = {101--110},
+ numpages = {10},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+
+% cited
+article{martel-semantics,
+  author    = {Matthieu Martel},
+  title     = {{Semantics of roundoff error propagation in finite precision
+               calculations}},
+  journal   = {Higher-Order and Symbolic Computation},
+  volume    = {19},
+  number    = {1},
+  year      = {2006},
+  pages     = {7-30},
+}
+
+@article{martel-semantics,
+ author = {Martel, Matthieu},
+ title = {{Semantics of Roundoff Error Propagation in Finite Precision Calculations}},
+ journal = {Higher Order Symbolic Computation},
+ issue_date = {March 2006},
+ volume = {19},
+ number = {1},
+ year = {2006},
+ issn = {1388-3690},
+ pages = {7--30},
+ url = {http://dx.doi.org/10.1007/s10990-006-8608-2},
+ doi = {10.1007/s10990-006-8608-2},
+ acmid = {1145527},
+ publisher = {Kluwer Academic Publishers},
+ optaddress = {Hingham, MA, USA},
+}
+
+% cited
+inproceedings{rangelab,
+ author = {Martel, Matthieu},
+ title = {{RangeLab: A Static-Analyzer to Bound the Accuracy of Finite-Precision Computations}},
+ booktitle = {Proceedings of the 2011 13th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing},
+ series = {SYNASC '11},
+ year = {2011},
+ isbn = {978-0-7695-4630-8},
+ pages = {118--122},
+ numpages = {5},
+ publisher = {IEEE Computer Society},
+ optaddress = {Washington, DC, USA},
+ note = {\url{http://perso.univ-perp.fr/mmartel/rangelab.html}}
+}
+
+% TODO
+@inproceedings{rangelab,
+ author = {Martel, Matthieu},
+ title = {{RangeLab: A Static-Analyzer to Bound the Accuracy of Finite-Precision Computations}},
+ booktitle = {Proceedings of the 13th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)},
+ year = {2011},
+ isbn = {978-0-7695-4630-8},
+ pages = {118--122},
+ optnumpages = {5},
+ publisher = {IEEE Computer Society},
+ optaddress = {Washington, DC, USA},
+}
+
+
+% cited
+inproceedings{munoz-nfm-13,
+	Author = {Alwyn Goodloe and C{\'{e}}sar Mu{\~{n}}oz and Florent Kirchner and Lo{\"{\i}}c Correnson},
+	Booktitle = {Proceedings of the 5th NASA Formal Methods Symposium (NFM 2013)},
+	Month = {May},
+	Title = {Verification of Numerical Programs: From Real Numbers to Floating Point Numbers},
+        Optaddress = {Moffett Field, CA},
+        series = "Lecture Notes in Computer Science",        
+        opteditor = "Guillaume Brat and Neha Rungta and Arnaud Venet",
+        volume = "7871",
+        pages = "441--446",
+        year = "2013",
+        publisher = "Springer",
+}
+
+@inproceedings{munoz-nfm-13,
+	Author = {Alwyn Goodloe and C{\'{e}}sar Mu{\~{n}}oz and Florent Kirchner and Lo{\"{\i}}c Correnson},
+	Booktitle = {Proceedings of the 5th NASA Formal Methods Symposium, {NFM} 2013},
+	Title = {{Verification of Numerical Programs: From Real Numbers to Floating Point Numbers}},
+        Optaddress = {Moffett Field, CA},
+   series =    {Lecture Notes in Computer Science},
+        opteditor = "Guillaume Brat and Neha Rungta and Arnaud Venet",
+        volume = "7871",
+        pages = "441--446",
+        year = "2013",
+        publisher = "Springer",
+}
+
+% cited
+article{gappa,
+ author = {Daumas, Marc and Melquiond, Guillaume},
+ title = {{Certification of Bounds on Expressions Involving Rounded Operators}},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {January 2010},
+ volume = {37},
+ number = {1},
+ month = jan,
+ year = {2010},
+ issn = {0098-3500},
+ pages = {2:1--2:20},
+ articleno = {2},
+ numpages = {20},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+ note = {\url{http://gappa.gforge.inria.fr/}}
+}
+
+% I can't figure out why this displays as "pages"
+@article{gappa,
+ author = {Daumas, Marc and Melquiond, Guillaume},
+ title = {{Certification of Bounds on Expressions Involving Rounded Operators}},
+ journal = {ACM Transactions on Mathematical Software},
+ volume = {37},
+ number = {1},
+ year = {2010},
+ issn = {0098-3500},
+ pages = {1--20},
+ articleno = {2},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% cited
+article{roundoff-matlab,
+  author = {G{\'a}ti, Attila},
+  title = {{Miller Analyzer for Matlab: A Matlab Package for Automatic Roundoff Analysis}},
+  journal = {Computing and Informatics},
+  number = 4,
+  pages = {713-},
+  volume = 31,
+  year = 2012
+}
+
+@article{roundoff-matlab,
+  author = {G{\'a}ti, Attila},
+  title = {{Miller Analyzer for Matlab: A Matlab Package for Automatic Roundoff Analysis}},
+  journal = {Computing and Informatics},
+  number = 4,
+  pages = {713--726},
+  volume = 31,
+  year = 2012
+}
+
+% TODO
+@inproceedings{mixed-abstraction-fpa,
+  author={Brillout, Angelo and Kroening, Daniel and Wahl, Thomas},
+  title={{Mixed Abstractions for Floating-point Arithmetic}},
+  booktitle={Formal Methods in Computer-Aided Design (FMCAD)},
+  year={2009},
+  pages={69--76}
+}
+
+% cited
+incollection{fluctuat,
+  year={2009},
+  isbn={978-3-642-04569-1},
+  booktitle={Formal Methods for Industrial Critical Systems},
+  volume={5825},
+  series={Lecture Notes in Computer Science},
+  opteditor={Alpuente, Mar{\'i}­a and Cook, Byron and Joubert, Christophe},
+  doi={10.1007/978-3-642-04570-7_6},
+  title={{Towards an Industrial Use of FLUCTUAT on Safety-Critical Avionics Software}},
+  url={http://dx.doi.org/10.1007/978-3-642-04570-7_6},
+  publisher={Springer Berlin Heidelberg},
+  author={Delmas, David and Goubault, Eric and Putot, Sylvie and Souyris, Jean and Tekkal, Karim and V{\'e}drine, Franck},
+  pages={53-69},
+  language={English}
+}
+
+@incollection{fluctuat,
+  year={2009},
+  isbn={978-3-642-04569-1},
+  booktitle={Formal Methods for Industrial Critical Systems, {FMICS} 2009},
+  volume={5825},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Alpuente, Mar{\'i}­a and Cook, Byron and Joubert, Christophe},
+  doi={10.1007/978-3-642-04570-7\_6},
+  title={{Towards an Industrial Use of {FLUCTUAT} on Safety-Critical Avionics Software}},
+  publisher={Springer Berlin Heidelberg},
+  author={Delmas, David and Goubault, Eric and Putot, Sylvie and Souyris, Jean and Tekkal, Karim and V{\'e}drine, Franck},
+  pages={53-69},
+  language={English}
+}
+
+% cited
+incollection{z3-solver,
+  year={2008},
+  isbn={978-3-540-78799-0},
+  booktitle={Tools and Algorithms for the Construction and Analysis of Systems},
+  volume={4963},
+  series={Lecture Notes in Computer Science},
+  opteditor={Ramakrishnan, C.R. and Rehof, Jakob},
+  doi={10.1007/978-3-540-78800-3_24},
+  title={{Z3: An Efficient SMT Solver}},
+  url={http://dx.doi.org/10.1007/978-3-540-78800-3_24},
+  publisher={Springer Berlin Heidelberg},
+  author={de Moura, Leonardo and BjÃ¸rner, Nikolaj},
+  pages={337-340},
+  language={English}
+}
+
+@incollection{z3-solver,
+  year={2008},
+  isbn={978-3-540-78799-0},
+  booktitle={Tools and Algorithms for the Construction and Analysis of Systems, {TACAS} 2008},
+  volume={4963},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Ramakrishnan, C.R. and Rehof, Jakob},
+  doi={10.1007/978-3-540-78800-3_24},
+  title={{Z3: An Efficient SMT Solver}},
+  publisher={Springer Berlin Heidelberg},
+  author={de Moura, Leonardo and Bj{\o}rner, Nikolaj},
+  pages={337-340},
+  language={English}
+}
+
+% TODO
+@inproceedings{mathsat5,
+  author={Cimatti, Alessandro and Griggio, Alberto and Schaafsma, BastiaanJoost and Sebastiani, Roberto},
+  title = {{The MathSAT5 SMT Solver}},
+  opteditor={Piterman, Nir and Smolka, Scott A.},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems, {TACAS} 2013},
+  year = {2013},
+  volume = {7795},
+   series =    {Lecture Notes in Computer Science},
+  pages={93--107},
+  publisher={Springer},
+  doi={10.1007/978-3-642-36742-7_7},
+}
+
+% TODO - conference number
+@inproceedings{smartfloat,
+ author = {Darulova, Eva and Kuncak, Viktor},
+ title = {{Trustworthy Numerical Computation in Scala}},
+ booktitle = {Proceedings of the ACM International Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA)},
+ year = {2011},
+ isbn = {978-1-4503-0940-0},
+ location = {Portland, Oregon, USA},
+ pages = {325--344},
+ numpages = {20},
+ doi = {10.1145/2048066.2048094},
+ acmid = {2048094},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA}
+} 
+
+% cited
+inproceedings{gappapp,
+ author = {Linderman, Michael D. and Ho, Matthew and Dill, David L. and Meng, Teresa H. and Nolan, Garry P.},
+ title = {{Towards Program Optimization Through Automated Analysis of Numerical Precision}},
+ booktitle = {Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization},
+ series = {CGO '10},
+ year = {2010},
+ isbn = {978-1-60558-635-9},
+ location = {Toronto, Ontario, Canada},
+ pages = {230--237},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1772954.1772987},
+ doi = {10.1145/1772954.1772987},
+ acmid = {1772987},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+ keywords = {fixed-point numbers, floating-point numbers, numerical precision, static error analysis}
+} 
+
+@inproceedings{gappapp,
+ author = {Linderman, Michael D. and Ho, Matthew and Dill, David L. and Meng, Teresa H. and Nolan, Garry P.},
+ title = {{Towards Program Optimization Through Automated Analysis of Numerical Precision}},
+ booktitle = {Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, {CGO} 2010},
+ year = {2010},
+ isbn = {978-1-60558-635-9},
+ location = {Toronto, Ontario, Canada},
+ pages = {230--237},
+ numpages = {8},
+ doi = {10.1145/1772954.1772987},
+ acmid = {1772987},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA}
+} 
+
+% cited
+inproceedings{ariadne,
+ author = {Barr, Earl T. and Vo, Thanh and Le, Vu and Su, Zhendong},
+ title = {{Automatic Detection of Floating-point Exceptions}},
+ booktitle = {Proceedings of the 40th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ year = {2013},
+ isbn = {978-1-4503-1832-7},
+ location = {Rome, Italy},
+ pages = {549--560},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2429069.2429133},
+ doi = {10.1145/2429069.2429133},
+ acmid = {2429133},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+ keywords = {floating-point exceptions, symbolic execution}
+} 
+
+@inproceedings{ariadne,
+ author = {Barr, Earl T. and Vo, Thanh and Le, Vu and Su, Zhendong},
+ title = {{Automatic Detection of Floating-point Exceptions}},
+ booktitle = {Proceedings of the 40th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL)},
+ year = {2013},
+ isbn = {978-1-4503-1832-7},
+ location = {Rome, Italy},
+ pages = {549--560},
+ numpages = {12},
+ doi = {10.1145/2429069.2429133},
+ acmid = {2429133},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA}
+} 
+
+@inproceedings{coral-ia,
+  author = {Borges, Mateus and d'Amorim, Marcelo and Anand, Saswat and Bushnell, David H. and Pasareanu, Corina S.},
+  title = {{Symbolic Execution with Interval Solving and Meta-heuristic Search.}},
+  booktitle = {ICST},
+  opteditor = {Antoniol, Giuliano and Bertolino, Antonia and Labiche, Yvan},
+  pages = {111-120},
+  publisher = {IEEE},
+  year = {2012}
+}
+
+% cited
+inproceedings{taylor-cas,
+ author = {Mutrie, Mark P. W. and Bartels, Richard H. and Char, Bruce W.},
+ title = {{An Approach for Floating-Point Error Analysis Using Computer Algebra}},
+ booktitle = {Papers from the International Symposium on Symbolic and Algebraic Computation},
+ series = {ISSAC '92},
+ year = {1992},
+ isbn = {0-89791-489-9},
+ location = {Berkeley, California, USA},
+ pages = {284--293},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/143242.143332},
+ doi = {10.1145/143242.143332},
+ acmid = {143332},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA}
+} 
+
+@inproceedings{taylor-cas,
+ author = {Mutrie, Mark P. W. and Bartels, Richard H. and Char, Bruce W.},
+ title = {{An Approach for Floating-Point Error Analysis Using Computer Algebra}},
+ booktitle = {Papers from the International Symposium on Symbolic and Algebraic Computation, {ISSAC} 1992},
+ year = {1992},
+ isbn = {0-89791-489-9},
+ location = {Berkeley, California, USA},
+ pages = {284--293},
+ numpages = {10},
+ doi = {10.1145/143242.143332},
+ acmid = {143332},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA}
+} 
+
+
+% TODO - fix Kuncak
+@inproceedings{rosa,
+ author = {Darulova, Eva and Kuncak, Viktor},
+ title = {{Sound Compilation of Reals}},
+ booktitle = {Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL)},
+ year = {2014},
+ location = {San Diego, California, USA},
+ pages = {235--248},
+ numpages = {14},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% cited
+inproceedings{fphile,
+  author={Paganelli, Gabriele and Ahrendt, Wolfgang},
+  booktitle={Symbolic and Numeric Algorithms for Scientific Computing (SYNASC), 2013 15th International Symposium on},
+  title={{Verifying (In-)Stability in Floating-Point Programs By Increasing Precision, Using SMT Solving}},
+  year={2013},
+  month={Sept},
+  pages={209-216},
+  doi={10.1109/SYNASC.2013.35}
+}
+
+@inproceedings{fphile,
+  author={Paganelli, Gabriele and Ahrendt, Wolfgang},
+  booktitle={Symbolic and Numeric Algorithms for Scientific Computing, SYNASC 2013},
+  title={{Verifying (In-)Stability in Floating-Point Programs by Increasing Precision, Using SMT Solving}},
+  year={2013},
+  pages={209-216},
+  doi={10.1109/SYNASC.2013.35}
+}
+
+% cited
+inproceedings{fmcad2012-fp-abstraction,
+  author={Haller, L. and Griggio, A. and Brain, M. and Kroening, D.},
+  title={{Deciding floating-point logic with systematic abstraction}},
+  booktitle={Formal Methods in Computer-Aided Design (FMCAD), 2012},
+  year={2012},
+  pages={131-140},
+}
+
+@inproceedings{fmcad2012-fp-abstraction,
+  author={Haller, Leopold and Griggio, Alberto and Brain, Martin and Kroening, Daniel},
+  title={{Deciding Floating-Point Logic with Systematic Abstraction}},
+  booktitle={Formal Methods in Computer-Aided Design, {FMCAD} 2012},
+  year={2012},
+  pages={131-140},
+}
+
+@inproceedings{dynamic-fp,
+ author = {Benz, Florian and Hildebrandt, Andreas and Hack, Sebastian},
+ title = {{A Dynamic Program Analysis to Find Floating-point Accuracy Problems}},
+ booktitle = {Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '12},
+ year = {2012},
+ location = {Beijing, China},
+ pages = {453--462},
+ numpages = {10},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% cited
+article{global-opt,
+  author = {Neumaier,Arnold},
+  title = {{Complete search in continuous global optimization and constraint satisfaction}},
+  journal = {Acta Numerica},
+  volume = {13},
+  month = {5},
+  year = {2004},
+  pages = {271--369},
+  numpages = {99},
+  note = {\url{http://www.mat.univie.ac.at/~neum/ms/glopt03.pdf}}
+}
+
+@article{global-opt,
+  author = {Neumaier,Arnold},
+  title = {{Complete search in continuous global optimization and constraint satisfaction}},
+  journal = {Acta Numerica},
+  volume = {13},
+  year = {2004},
+  pages = {271--369},
+  numpages = {99}
+}
+
+@inproceedings{symbolic-fp-test,
+  author={Bagnara, R. and Carlier, M. and Gori, R. and Gotlieb, A.},
+  title={{Symbolic Path-Oriented Test Data Generation for Floating-Point Programs}},
+  booktitle={Software Testing, Verification and Validation (ICST), 2013 IEEE Sixth International Conference on},
+  year={2013},
+  pages={1-10},
+}
+
+% cited
+article{midpoint,
+ author = {Goualard, Fr{\'e}d{\'e}ric},
+ title = {How Do You Compute the Midpoint of an Interval?},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {February 2014},
+ volume = {40},
+ number = {2},
+ month = mar,
+ year = {2014},
+ pages = {11:1--11:25},
+ articleno = {11},
+ numpages = {25},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+
+% I don't know why pages appears on this one.
+@article{midpoint,
+ author = {Goualard, Fr{\'e}d{\'e}ric},
+ title = {{How Do You Compute the Midpoint of an Interval?}},
+ journal = {ACM Transactions on Mathematical Software},
+ volume = {40},
+ number = {2},
+ year = {2014},
+ pages = {11:1--11:25},
+ articleno = {11},
+ numpages = {25},
+}
+
+% cited
+inproceedings{fp-real-smt,
+  author    = {Miriam Leeser and
+               Saoni Mukherjee and
+               Jaideep Ramachandran and
+               Thomas Wahl},
+  title     = {{Make it real: Effective floating-point reasoning via exact
+               arithmetic}},
+  booktitle = {DATE},
+  year      = {2014},
+  pages     = {1-4},
+  note = {\url{http://www.ccs.neu.edu/home/wahl/Research/FPA-Heterogeneous/}}
+}
+
+@inproceedings{fp-real-smt,
+  author    = {Miriam Leeser and
+               Saoni Mukherjee and
+               Jaideep Ramachandran and
+               Thomas Wahl},
+  title     = {{Make it real: Effective floating-point reasoning via exact
+               arithmetic}},
+  booktitle = {Proceedings of the Conference on Design, Automation \& Test in Europe, {DATE} 2014},
+  year      = {2014},
+  pages     = {1-4}
+}
+
+% cited
+article{miller-taylor,
+ author = {Miller, Webb},
+ title = {{Software for Roundoff Analysis}},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {June 1975},
+ volume = {1},
+ number = {2},
+ month = jun,
+ year = {1975},
+ pages = {108--128},
+ numpages = {21},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+@article{miller-taylor,
+ author = {Miller, Webb},
+ title = {{Software for Roundoff Analysis}},
+ journal = {ACM {Transactions} on {Mathematical} {Software}},
+ volume = {1},
+ number = {2},
+ year = {1975},
+ pages = {108--128},
+ numpages = {21},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% cited
+article{stoutemyer-taylor,
+ author = {Stoutemyer, David R.},
+ title = {{Automatic Error Analysis Using Computer Algebraic Manipulation}},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {March 1977},
+ volume = {3},
+ number = {1},
+ month = mar,
+ year = {1977},
+ pages = {26--43},
+ numpages = {18},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+
+@article{stoutemyer-taylor,
+ author = {Stoutemyer, David R.},
+ title = {{Automatic Error Analysis Using Computer Algebraic Manipulation}},
+ journal = {ACM Transactions on Mathematical Software},
+ volume = {3},
+ number = {1},
+ year = {1977},
+ pages = {26--43},
+ numpages = {18},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+
+% cited
+@article{coq-wave,
+  author={Boldo, Sylvie and Cl{\'e}ment, Fran{\c{c}}ois and Filli{\^{a}}tre, Jean-Christophe and Mayero, Micaela and Melquiond, Guillaume and Weis, Pierre},
+  title={{Wave Equation Numerical Resolution: A Comprehensive Mechanized Proof of a C Program}},
+  year={2013},
+  journal={Journal of Automated Reasoning (JAR)},
+  volume={50},
+  number={4},
+  publisher={Springer},
+  pages={423--456},
+  doi={10.1007/s10817-012-9255-4},
+}
+
+% cited
+inproceedings{smt-fpa,
+  author = "Philipp R{\"u}mmer and Thomas Wahl",
+  title = "An {SMT-LIB} Theory of Binary Floating-Point Arithmetic",
+  booktitle = "Informal proceedings of 8th International Workshop on Satisfiability Modulo Theories (SMT) at FLoC, Edinburgh, Scotland",
+  year = "2010",
+  note = {\url{http://www.cprover.org/SMT-LIB-Float/}}
+}
+
+@inproceedings{smt-fpa,
+  author = {Philipp R{\"u}mmer and Thomas Wahl},
+  title = {{An SMT-LIB Theory of Binary Floating-Point Arithmetic}},
+  booktitle = {Informal proceedings of 8th International Workshop on Satisfiability Modulo Theories, SMT Workshop 2010},
+  year = {2010}
+}
+
+% cited
+@article{taylor-models-fpa,
+  author = "N. Revol and K. Makino and M. Berz",  
+  title = {{Taylor Models and Floating-Point Arithmetic: Proof That Arithmetic Operations Are Validated in COSY}},
+  journal = "The Journal of Logic and Algebraic Programming ",
+  volume = "64",
+  number = "1",
+  pages = "135-154",
+  year = "2005",
+}
+
+% cited
+incollection{static-fp,
+  year={2011},
+  isbn={978-3-642-18274-7},
+  booktitle={Verification, Model Checking, and Abstract Interpretation},
+  volume={6538},
+  series={Lecture Notes in Computer Science},
+  opteditor={Jhala, Ranjit and Schmidt, David},
+  title={{Static Analysis of Finite Precision Computations}},
+  publisher={Springer Berlin Heidelberg},
+  author={Goubault, Eric and Putot, Sylvie},
+  pages={232-247},
+  language={English}
+}
+
+@incollection{static-fp,
+  year={2011},
+  isbn={978-3-642-18274-7},
+  booktitle={International Workshop on Verification, Model Checking, and Abstract Interpretation, VMCAI 2011},
+  volume={6538},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Jhala, Ranjit and Schmidt, David},
+  title={{Static Analysis of Finite Precision Computations}},
+  publisher={Springer Berlin Heidelberg},
+  author={Goubault, Eric and Putot, Sylvie},
+  pages={232-247},
+  language={English}
+}
+
+inproceedings{stoke-fp,
+ author = {Schkufza, Eric and Sharma, Rahul and Aiken, Alex},
+ title = {{Stochastic Optimization of Floating-point Programs with Tunable Precision}},
+ booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '14},
+ year = {2014},
+ isbn = {978-1-4503-2784-8},
+ location = {Edinburgh, United Kingdom},
+ pages = {53--64},
+ numpages = {12},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+@inproceedings{stoke-fp,
+ author = {Schkufza, Eric and Sharma, Rahul and Aiken, Alex},
+ title = {{Stochastic Optimization of Floating-point Programs with Tunable Precision}},
+ booktitle = {PLDI 2014},
+ series = {PLDI '14},
+ year = {2014},
+ isbn = {978-1-4503-2784-8},
+ pages = {53--64},
+ numpages = {12},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA}
+} 
+
+@inproceedings{s3fp,
+ author = {Chiang, Wei-Fan and Gopalakrishnan, Ganesh and Rakamari\'c, Zvonimir and Solovyev, Alexey},
+ title = {{Efficient Search for Inputs Causing High Floating-point Errors}},
+ booktitle = {Proceedings of the 19th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP)},
+ year = {2014},
+ isbn = {978-1-4503-2656-8},
+ optlocation = {Orlando, Florida, USA},
+ pages = {43--52},
+ doi = {10.1145/2555243.2555265},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% cited
+incollection{flyspeck-taylor,
+  year={2013},
+  isbn={978-3-642-38087-7},
+  booktitle={NASA Formal Methods},
+  volume={7871},
+  series={Lecture Notes in Computer Science},
+  opteditor={Brat, Guillaume and Rungta, Neha and Venet, Arnaud},
+  doi={10.1007/978-3-642-38088-4_26},
+  title={{Formal Verification of Nonlinear Inequalities with Taylor Interval Approximations}},
+  url={http://dx.doi.org/10.1007/978-3-642-38088-4_26},
+  publisher={Springer Berlin Heidelberg},
+  author={Solovyev, Alexey and Hales, Thomas C.},
+  pages={383-397},
+  language={English}
+}
+
+@incollection{flyspeck-taylor,
+  year={2013},
+  isbn={978-3-642-38087-7},
+  booktitle={NASA Formal Methods, NFM 2013},
+  volume={7871},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Brat, Guillaume and Rungta, Neha and Venet, Arnaud},
+  doi={10.1007/978-3-642-38088-4_26},
+  title={{Formal Verification of Nonlinear Inequalities with Taylor Interval Approximations}},
+  publisher={Springer Berlin Heidelberg},
+  author={Solovyev, Alexey and Hales, Thomas C.},
+  pages={383--397},
+  language={English}
+}
+
+% cited
+@misc{coq-reference,
+  key={Coq},
+  title = {{The Coq Proof Assistant}},
+  howpublished = {\url{http://coq.inria.fr}},
+  year={2016},
+}
+
+% cited
+@misc{frama-c,
+  key={Frama-C},
+  title = {{Frama-C Software Analyzers}},
+  howpublished = {\url{http://frama-c.com/index.html}},
+  year={2017}
+}
+
+% cited
+@online{world-wind,
+  author = {NASA},
+  key={World Wind},
+  title = {{NASA World Wind Java SDK}},
+  url = {http://worldwind.arc.nasa.gov/java/},
+  year={2017},
+  lastaccessed = {October 13, 2017}
+}
+
+
+% cited
+inproceedings{ocaml-interval,
+  author = {Alliot, Jean-Marc and Durand, Nicolas and Gianazza, David and Gotteland, Jean-Baptiste},
+  title = "{Implementing an interval computation library for OCaml on x86/amd64 architectures (short paper)}",
+  booktitle = "{International Conference on Functional Programming, Copenhague, Danemark, 10/09/12-12/09/12}",
+  year = {2012},
+  publisher = {ACM},
+  pages = {(on line)},
+}
+
+@inproceedings{alliot2012finding,
+  title =	 {{Finding and Proving the Optimum: Cooperative
+                  Stochastic and Deterministic Search}},
+  author =	 {Alliot, Jean-Marc and Durand, Nicolas and Gianazza,
+                  David and Gotteland, Jean-Baptiste},
+  booktitle =	 {Proceedings of the 20th European Conference on
+                  Artificial Intelligence (ECAI)},
+  pages =	 {55--60},
+  year =	 {2012},
+  publisher = {ACM},
+  doi = {10.3233/978-1-61499-098-7-55},
+}
+
+% TODO
+@inproceedings{ocaml-interval,
+  author = {Alliot, Jean-Marc and Durand, Nicolas and Gianazza, David and Gotteland, Jean-Baptiste},
+  title = {{Implementing an Interval Computation Library for OCaml on x86/AMD64 Architectures (Short Paper)}},
+  booktitle = {International Conference on Functional Programming (ICFP)},
+  year = {2012},
+  publisher = {ACM},
+}
+
+% cited
+@online{nlopt,
+  author = {Steven G. Johnson}, 
+  title = {{The {NLopt} Nonlinear-Optimization Package}},
+  url = {https://nlopt.readthedocs.io/en/latest/},
+  year = {2017},
+  lastaccessed={October 13, 2017},
+}
+
+% cited
+@online{maxima,
+  author = {Maxima},
+  year = {2013},
+  title = {{Maxima, a Computer Algebra System. Version 5.30.0}},
+  address = {http://maxima.sourceforge.net/},
+  url = {http://maxima.sourceforge.net/},
+  owner = {maxima},
+  lastaccessed = {April 3, 2013}
+}
+
+% cited
+article{icos,
+ author = {Lebbah, Y.},
+ title = {{ICOS: A Branch and Bound Based Solver for Rigorous Global Optimization}},
+ journal = {Optimization Methods Software},
+ issue_date = {August 2009},
+ volume = {24},
+ number = {4-5},
+ month = aug,
+ year = {2009},
+ pages = {709--726},
+ note = {\url{https://sites.google.com/site/ylebbah/icos}}
+}
+
+@article{icos,
+ author = {Lebbah, Yahia},
+ title = {{ICOS: A Branch and Bound Based Solver for Rigorous Global Optimization}},
+ journal = {Optimization Methods Software},
+ volume = {24},
+ number = {4-5},
+ year = {2009},
+ pages = {709--726},
+} 
+
+% cited
+article{ieee754,
+  key={IEEE 754},
+  journal={IEEE Std 754-2008},
+  title={{IEEE Standard for Floating-Point Arithmetic}},
+  year={2008},
+  pages={1--70},
+}
+
+% cited
+article{mpfr,
+ author = {Fousse, Laurent and Hanrot, Guillaume and Lef\`{e}vre, Vincent and P{\'e}lissier, Patrick and Zimmermann, Paul},
+ title = {{MPFR: A Multiple-precision Binary Floating-Point Library with Correct Rounding}},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {June 2007},
+ volume = {33},
+ number = {2},
+ month = jun,
+ year = {2007},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+ note = {\url{http://www.mpfr.org/}}
+}
+
+@article{mpfr,
+ author = {Fousse, Laurent and Hanrot, Guillaume and Lef\`{e}vre, Vincent and P{\'e}lissier, Patrick and Zimmermann, Paul},
+ title = {{MPFR: A Multiple-precision Binary Floating-Point Library with Correct Rounding}},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {June 2007},
+ volume = {33},
+ number = {2},
+ year = {2007},
+}
+
+% cited
+% TODO
+@article{cr-libm,
+  author = {Daramy, Catherine and Defour, David and de Dinechin, Florent and Muller, Jean-Michel},
+  title = {{CR-LIBM: A Correctly Rounded Elementary Function Library}},
+  optjournal = {Proc. SPIE},
+  journal = {Advanced Signal Processing Algorithms, Architectures, and Implementations XIII, SPIE},
+  volume = {5205},
+  number = {},
+  pages = {458--464},
+  year = {2003},
+}
+
+
+% cited
+incollection{hollight,
+  year={2009},
+  isbn={978-3-642-03358-2},
+  booktitle={Theorem Proving in Higher Order Logics},
+  volume={5674},
+  series={Lecture Notes in Computer Science},
+  opteditor={Berghofer, Stefan and Nipkow, Tobias and Urban, Christian and Wenzel, Makarius},
+  doi={10.1007/978-3-642-03359-9_4},
+  title={{HOL Light: An Overview}},
+  url={http://dx.doi.org/10.1007/978-3-642-03359-9_4},
+  publisher={Springer Berlin Heidelberg},
+  author={Harrison, John},
+  pages={60-66},
+  language={English}
+}
+
+@incollection{hollight,
+  year={2009},
+  isbn={978-3-642-03358-2},
+  booktitle={TPHOLs 2009},
+  volume={5674},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Berghofer, Stefan and Nipkow, Tobias and Urban, Christian and Wenzel, Makarius},
+  doi={10.1007/978-3-642-03359-9_4},
+  title={{HOL Light: An Overview}},
+  publisher={Springer Berlin Heidelberg},
+  author={Harrison, John},
+  pages={60-66},
+  language={English}
+}
+	
+% cited
+incollection{harrison-trans,
+  year={2000},
+  isbn={978-3-540-41219-9},
+  booktitle={Formal Methods in Computer-Aided Design},
+  volume={1954},
+   series =    {Lecture Notes in Computer Science},
+  opteditor = {Warren A. Hunt and Steven D. Johnson},
+  title={{Formal Verification of Floating Point Trigonometric Functions}},
+  publisher={Springer Berlin Heidelberg},
+  author={Harrison, John},
+  pages={254-270},
+  language={English}
+}
+
+@inproceedings{harrison-trans,
+  year={2000},
+  isbn={978-3-540-41219-9},
+  booktitle={Proceedings of the 3rd International Conference on Formal Methods in Computer-Aided Design (FMCAD)},
+  volume={1954},
+  series =    {Lecture Notes in Computer Science},
+  opteditor = {Warren A. Hunt and Steven D. Johnson},
+  title={{Formal Verification of Floating Point Trigonometric Functions}},
+  publisher={Springer},
+  author={Harrison, John},
+  pages={254--270},
+}
+
+% cited
+article{coq-fp,
+  author = "Guillaume Melquiond",
+  title = "Floating-Point arithmetic in the Coq system ",
+  journal = "Information and Computation ",
+  volume = "216",
+  number = "0",
+  pages = "14 - 23",
+  year = "2012",
+  note = "Special Issue: 8th Conference on Real Numbers and Computers ",
+}
+
+@article{coq-fp,
+  author = {Melquiond, Guillaume},
+  title = {{Floating-Point Arithmetic in the Coq System}},
+  journal = {Information and Computation},
+  issue_date = {July, 2012},
+  volume = {216},
+  year = {2012},
+  issn = {0890-5401},
+  pages = {14--23},
+  url = {http://dx.doi.org/10.1016/j.ic.2011.09.005},
+  doi = {10.1016/j.ic.2011.09.005},
+  acmid = {2228930},
+  publisher = {Academic Press, Inc.},
+  optaddress = {Duluth, MN, USA},
+  keywords = {Coq system, Floating-Point arithmetic, Formal proofs},
+}
+
+% cited
+incollection{hollight-fp,
+  year={2006},
+  isbn={978-3-540-34304-2},
+  booktitle={Formal Methods for Hardware Verification},
+  volume={3965},
+  series={Lecture Notes in Computer Science},
+  opteditor={Bernardo, Marco and Cimatti, Alessandro},
+  title={{Floating-Point Verification Using Theorem Proving}},
+  publisher={Springer Berlin Heidelberg},
+  author={Harrison, John},
+  pages={211-242},
+  language={English}
+}
+
+@incollection{hollight-fp,
+  year={2006},
+  isbn={978-3-540-34304-2},
+  booktitle={SFM 2006},
+  volume={3965},
+   series =    {Lecture Notes in Computer Science},
+  opteditor={Bernardo, Marco and Cimatti, Alessandro},
+  title={{Floating-Point Verification Using Theorem Proving}},
+  publisher={Springer Berlin Heidelberg},
+  author={Harrison, John},
+  pages={211-242},
+  language={English}
+}
+
+inproceedings{sc13-precimonious,
+  author    = {Cindy Rubio-Gonz\'{a}lez and
+               Cuong Nguyen and
+               Hong Diep Nguyen and
+               James Demmel and
+               William Kahan and
+               Koushik Sen and
+               David H. Bailey and
+               Costin Iancu and
+               David Hough},
+  title     = {{Precimonious: Tuning Assistant for Floating-Point Precision}},
+  booktitle = {International Conference on High Performance Computing, Networking, Storage and Analysis (SC)},
+  year      = {2013},
+  pages = {27:1--27:12},
+  note = {\url{https://github.com/corvette-berkeley/precimonious}}
+}
+
+
+@inproceedings{sc13-precimonious,
+  author    = {Cindy Rubio-Gonz\'{a}lez and
+               Cuong Nguyen and
+               Hong Diep Nguyen and
+               James Demmel and
+               William Kahan and
+               Koushik Sen and
+               David H. Bailey and
+               Costin Iancu and
+               David Hough},
+  title     = {{Precimonious: Tuning Assistant for Floating-Point Precision}},
+  booktitle = {Supercomputing (SC)},
+  year      = {2013},
+  pages = {27:1--27:12},
+  note = {\url{https://github.com/corvette-berkeley/precimonious}}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{smt-encodes-fp-rounding,
+  author    = {Franjo Ivancic and
+               Malay K. Ganai and
+               Sriram Sankaranarayanan and
+               Aarti Gupta},
+  title     = {{Numerical Stability Analysis of Floating-Point Computations
+               using software model checking}},
+  optbooktitle = {8th IEEE/ACM Intl. Conf. on Formal Methods and Models for Codesign (MEMOCODE)},
+  booktitle = {IEEE/ACM Intl. Conference on Formal Methods and Models for Codesign (MEMOCODE)},
+  year      = {2010},
+  pages     = {49--58},
+}
+
+
+@article{symbolic-fp2,
+ author = {Botella, Bernard and Gotlieb, Arnaud and Michel, Claude},
+ title = {{Symbolic Execution of Floating-Point Computations: Research Articles}},
+ journal = {Softw. Test. Verif. Reliab.},
+ issue_date = {June 2006},
+ volume = {16},
+ number = {2},
+ month = jun,
+ year = {2006},
+ issn = {0960-0833},
+ pages = {97--121},
+ numpages = {25},
+ publisher = {John Wiley and Sons Ltd.},
+ optaddress = {Chichester, UK},
+}
+
+
+@inproceedings{gappa-elementary,
+ author = {de Dinechin, Florent and Lauter, Christoph Quirin and Melquiond, Guillaume},
+ title = {Assisted verification of elementary functions using Gappa},
+ booktitle = {ACM Symposium on Applied computing (SAC)},
+ year = {2006},
+ pages = {1318--1322},
+}
+
+
+
+
+
+
+@inproceedings{smt-fp-binary-search,
+  title={{Finite precision bit-width allocation using SAT-modulo theory}},
+  author={Kinsman, Adam B and Nicolici, Nicola},
+  booktitle={Conference on Design, Automation and Test in Europe (DATE)},
+  pages={1106--1111},
+  year={2009}
+}
+
+
+@inproceedings{pldi-12-dynamic-analysis,
+  author    = {Florian Benz and
+               Andreas Hildebrandt and
+               Sebastian Hack},
+  title     = {{A Dynamic Program Analysis to Find Floating-Point Accuracy
+               problems}},
+  booktitle = {ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+  year      = {2012},
+  pages     = {453--462},
+
+}
+
+
+
+
+@article{pc13-lam-hollingsworth-fp-cancellation,
+  author    = {Michael O. Lam and
+               Jeffrey K. Hollingsworth and
+               G. W. Stewart},
+  title     = {{Dynamic Floating-Point Cancellation Detection}},
+  journal   = {Parallel Computing},
+  volume    = {39},
+  number    = {3},
+  year      = {2013},
+  pages     = {146--155},
+}
+
+
+@inproceedings{ics13-lam-hollingsworth-fp-tuning,
+  author    = {Michael O. Lam and
+               Jeffrey K. Hollingsworth and
+               Bronis R. de Supinski and
+               Matthew P. LeGendre},
+  title     = {{Automatically Adapting Programs for Mixed-Precision Floating-Point
+               Computation}},
+  booktitle = {International Conference on Supercomputing (ICS)},
+  year      = {2013},
+  pages     = {369--378},
+}
+
+
+@article{parboil,
+  title={{Parboil: A Revised Benchmark Suite for
+    Scientific and Commercial Throughput Computing}},
+  author={Stratton, John A and Rodrigues, Christopher and Sung, I-Jui and Obeid, Nady and Chang, Li-Wen and Anssari, Nasser and Liu, Geng Daniel and Hwu, Wen-mei W},
+  journal={Center for Reliable and High-Performance Computing},
+  year={2012}
+}
+
+
+@misc{magma,
+  key = {MAGMA},
+  title = {{The MAGMA Library}},
+  howpublished = {\url{http://icl.cs.utk.edu/magma/index.html}},
+}
+
+@misc{npb,
+  key = {NPB},
+  title = {{The NAS Parallel Benchmarks (NPB)}},
+  howpublished = {\url{http://www.nas.nasa.gov/publications/npb.html}},
+}
+
+@book{lapack,
+ author = {Anderson, E. and Bai, Z. and Bischof, C. and Blackford, L. S. and Demmel, J. and Dongarra, Jack J. and Du Croz, J. and Hammarling, S. and Greenbaum, A. and McKenney, A. and Sorensen, D.},
+ title = {{LAPACK Users' Guide (3rd Ed.)}},
+ year = {1999},
+ publisher = {SIAM: Society for Industrial and Applied Mathematics},
+}
+
+
+@inproceedings{coq-with-gappa,
+  title={{Combining Coq and Gappa for Certifying Floating-point Programs}},
+  author={Boldo, Sylvie and Filli{\^a}tre, Jean-Christophe and Melquiond, Guillaume},
+  booktitle={Proceedings of the 16th Symposium on the Integration of Symbolic
+    Computation and Mechanised Reasoning (CALCULEMUS)},
+  pages={59--74},
+  publisher={Springer},
+  doi = {10.1007/978-3-642-02614-0_10},
+  year={2009}
+}
+
+
+% TODO
+@inproceedings{flocq-sylvie-boldo,
+  author = {Sylvie Boldo and Guillaume Melquiond},
+  title = {{Flocq: A Unified Library for Proving Floating-Point Algorithms in Coq}},
+  booktitle = {IEEE Symposium on Computer Arithmetic},
+  year = {2011},
+  pages = {243--252}
+}
+
+
+@inbook{uintah-main-citation,
+  chapter={Scalable parallel {AMR} for the {U}intah multiphysics code},
+  author={Luitjens, Justin and Worthen, Bryan and Berzins, Martin and Henderson, Thomas C},
+  title={{Petascale Computing Algorithms and Applications}},
+  pages={67--82},
+  year={2007},
+  publisher={Chapman and Hall/CRC}
+}
+
+
+@article{ils-algo,
+  title={{Iterated local search}},
+  author={Louren{\c{c}}o, Helena R and Martin, Olivier C and Stutzle, Thomas},
+  journal={arXiv preprint math/0102188},
+  year={2001}
+}
+
+
+@inproceedings{ils-paramils,
+  title={{Automatic algorithm configuration based on local search}},
+  author={Hutter, Frank and Hoos, Holger H and St{\"u}tzle, Thomas},
+  booktitle={National Conference on Artificial Intelligence},
+  pages = {1152--1157},
+  year={2007},
+}
+
+
+@incollection{pso-algo,
+  title={{Particle swarm optimization}},
+  author={Kennedy, James},
+  booktitle={Encyclopedia of Machine Learning},
+  publisher={Springer-Verlag},
+  pages={760--766},
+  year={2010}
+}
+
+@inproceedings{coral-solver,
+ author = {Souza, Matheus and Borges, Mateus and d'Amorim, Marcelo and P\u{a}s\u{a}reanu, Corina S.},
+ title = {{CORAL: Solving Complex Constraints for Symbolic Pathfinder}},
+ booktitle = {NASA Formal Methods Symposium (NFM)},
+ year = {2011},
+ pages = {359--374},
+}
+
+
+
+@manual{cuda-reduction,
+  title={{Optimizing parallel reduction in CUDA}},
+  author={Harris, Mark},
+  organization={NVIDIA Developer Technology},
+  optvolume={2},
+  year={2007}
+}
+
+
+@misc{balanced-vs-imbalanced,
+    author = {Nathan Whitehead and Alex Fit-florea},
+    title = {{Precision \& Performance: Floating Point and IEEE 754 Compliance for NVIDIA GPUs}},
+    year = {}
+}
+
+
+@article{hoare-logic,
+  title={{An axiomatic basis for computer programming}},
+  author={Hoare, Charles Antony Richard},
+  journal={Communications of the ACM},
+  volume={12},
+  number={10},
+  pages={576--580},
+  year={1969},
+}
+
+@article{kahan-summation,
+ author = {Kahan, W.},
+ title = {{Pracniques: Further Remarks on Reducing Truncation Errors}},
+ journal = {Communications of the ACM},
+ volume = {8},
+ number = {1},
+ month = jan,
+ year = {1965},
+ pages = {40--},
+ publisher = {ACM},
+}
+
+@book{acc-and-sta-numberical-algos,
+  title={{Accuracy and Stability of Numerical Algorithms (2nd Ed.)}},
+  author={Higham, Nicholas J},
+  publisher = {SIAM: Society for Industrial and Applied Mathematics},
+  year={2002}
+}
+
+@misc{s3fp-website,
+  key={S3FP},
+  title = {Guided Random Testing for Floating-Point Error Estimation},
+  howpublished = {\url{https://sites.google.com/site/grt4fperror/}},
+}
+
+
+@inproceedings{petabricks,
+ author = {Ansel, Jason and Chan, Cy and Wong, Yee Lok and Olszewski, Marek and Zhao, Qin and Edelman, Alan and Amarasinghe, Saman},
+ title = {{PetaBricks: a language and compiler for algorithmic choice}},
+  booktitle = {ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+ year = {2009},
+ pages = {38--49},
+}
+
+
+@inproceedings{wodet13-determinism,
+  title={{Determinism and Reproducibility in Large-Scale {HPC} Systems}},
+  author={Chiang, Wei-Fan and Gopalakrishnan, Ganesh and Rakamari\'c, Zvonimir and Ahn, Dong H. and Lee, Gregory L.},
+  booktitle={Workshop on Determinism and Correctness in Parallel Programming (WoDet)},
+  year={2013}
+}
+
+
+@inproceedings{gklee-sc12-peng-paper,
+  author    = {Peng Li and
+               Guodong Li and
+               Ganesh Gopalakrishnan},
+  title     = {{Parametric flows: automated behavior equivalencing for symbolic
+               analysis of races in CUDA programs}},
+  booktitle = {International Conference on High Performance Computing, Networking, Storage and Analysis (SC)},
+  year      = {2012},
+  pages = {29:1--29:10},
+}
+
+
+@techreport{jdemmel-tr-1992,
+    Author = {Demmel, James W.},
+    Title = {Trading Off Parallelism and Numerical Stability},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {1992},
+    Number = {UCB/CSD-92-702}
+}
+
+
+@misc{bailey-2005-highly-parallel-precision,
+  title={{Highly parallel, high-precision numerical integration}},
+  author={Bailey, David H and Borwein, Jonathan M},
+  year={2005}
+}
+
+% Cited as of now : added by Ganesh
+
+@misc{bailey-borwein-2009-high-precision-computation,
+title = {{High-Precision Computation and Mathematical Physics}},
+author={Bailey, David H and Borwein, Jonathan M},
+year={2009}
+}
+
+
+@book{ieee-754-1985,
+  author = {{IEEE Task P754}},
+  title={{ANSI/IEEE 754-1985, Standard for Binary Floating-Point Arithmetic}},
+  year={1985},
+  publisher = {IEEE}
+}
+
+@ARTICLE{cooley-tukey-fft,
+author={Heideman, M. and Johnson, D.H. and Burrus, C.S.},
+journal={ASSP Magazine, IEEE},
+title={{Gauss and the history of the fast Fourier transform}},
+year={1984},
+volume={1},
+number={4},
+pages={14--21},
+}
+
+
+
+@inproceedings{jdemmel-exascale,
+  author    = {James Demmel and
+               Hong Diep Nguyen},
+  title     = {{Numerical Reproducibility and Accuracy at ExaScale}},
+  booktitle = {IEEE Symposium on Computer Arithmetic},
+  year      = {2013},
+  pages     = {235--237},
+}
+
+@article{symbolic-testing-cadar-sen,
+title = {{Symbolic execution for software testing: three decades later}},
+author = {Cristian Cadar and Koushik Sen},
+journal = {Communications of the ACM},
+volume = 56,
+number = 2,
+month = feb,
+year = 2013,
+pages = {82--90}}
+
+%--non-cited but kept around
+@inproceedings{quantum-monte-carlo,
+title = {{Numerical Reproducibility for Implicit Monte Carlo Simulations}},
+author = {M. Cleveland and T. Brunner and N. Gentile},
+booktitle = {The International Conference on Mathematics and
+  Computational Methods Applied to Nuclear Science and
+  Engineering},
+note  = {2013, LLNL Reference LLNL-CONF-595032}}
+
+@misc{ganssle-approximation,
+author={J. G. Ganssle},
+note = {A Guide to Approximation. 
+        \url{http://www.ganssle.com/approx/approx.pdf}}
+}
+
+@book{hart-approximation,
+  title={{Computer Approximations}},
+  author={Hart, J.F.},
+  lccn={lc67023326},
+  series={The SIAM series in applied mathematics},
+  year={1968},
+  publisher={John Wiley \& Sons Australia, Limited}
+}
+
+@article{arctan-approximation,
+  author={Rajan, S. and Sichun Wang and Inkol, R. and Joyal, A.},
+  journal={Signal Processing Magazine, IEEE},
+  title={{Efficient approximations for the arctangent function}},
+  year={2006},
+  month={May},
+  volume={23},
+  number={3},
+  pages={108-111},
+}
+
+% TODO
+@inproceedings{popl2017-cbbsgr,
+  author = {Wei-Fan Chiang and Mark Baranowski and Ian Briggs and Alexey Solovyev and
+    Ganesh Gopalakrishnan and Zvonimir Rakamari\'c},
+  title = {{Rigorous Floating-Point Mixed-Precision Tuning}},
+  booktitle = {Proceedings of the ACM SIGPLAN Symposium on Principles of
+    Programming Languages (POPL)},
+  pages={300--315},
+  publisher = {ACM},
+  year = {2017},
+  url = {https://doi.org/10.1145/3009837.3009846},
+  doi = {10.1145/3009837.3009846},
+}
+
+@article{JacobsenSG15,
+  author    = {Charles Jacobsen and
+               Alexey Solovyev and
+               Ganesh Gopalakrishnan},
+  title     = {{A Parameterized Floating-Point Formalization in HOL Light}},
+  journal   = {Electronic Notes in Theoretical Computer Science},
+  volume    = {317},
+  pages     = {101--107},
+  year      = {2015},
+}
+
+@article{MagronCD15,
+ author = {Magron, Victor and Constantinides, George and Donaldson, Alastair},
+ title = {{Certified Roundoff Error Bounds Using Semidefinite Programming}},
+ journal = {ACM Transactions on Mathematical Software},
+ issue_date = {January 2017},
+ volume = {43},
+ number = {4},
+ month = jan,
+ year = {2017},
+ issn = {0098-3500},
+ pages = {34:1--34:31},
+ articleno = {34},
+ numpages = {31},
+ url = {http://doi.acm.org/10.1145/3015465},
+ doi = {10.1145/3015465},
+ acmid = {3015465},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+} 
+
+@article{Goldberg1991,
+ author = {Goldberg, David},
+ title = {{What Every Computer Scientist Should Know About Floating-Point Arithmetic}},
+ journal = {ACM Computing Surveys},
+ volume = {23},
+ number = {1},
+ month = mar,
+ year = {1991},
+ issn = {0360-0300},
+ pages = {5--48},
+ url = {http://doi.acm.org/10.1145/103162.103163},
+ doi = {10.1145/103162.103163},
+ acmid = {103163},
+ publisher = {ACM},
+ optaddress = {New York, NY, USA},
+}
+
+% TODO - spell out TOPLAS
+@article{Darulova2017,
+ author = {Darulova, Eva and Kuncak, Viktor},
+ title = {{Towards a Compiler for Reals}},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ optissue_date = {May 2017},
+ volume = {39},
+ number = {2},
+ optmonth = mar,
+ year = {2017},
+ pages = {8:1--8:28},
+ optarticleno = {8},
+ doi = {10.1145/3014426},
+ acmid = {3014426},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{hal-fft,
+  TITLE = {{Error analysis of some operations involved in the Cooley-Tukey Fast Fourier Transform}},
+  AUTHOR = {Brisebarre, Nicolas and Joldes, Mioara and Muller, Jean-Michel and Nane{\c s}, Ana-Maria and Picot, Joris},
+  JOURNAL = {{ACM Transactions on Mathematical Software}},
+  PUBLISHER = {{Association for Computing Machinery}},
+  PAGES = {1-34},
+  YEAR = {2019},
+  PDF = {https://hal.archives-ouvertes.fr/hal-01949458/file/Bounds-FFT-HaLV2-oct19.pdf},
+}
+
+@article{prefixsum,
+author = {Chong, Nathan and Donaldson, Alastair F. and Ketema, Jeroen},
+title = {{A Sound and Complete Abstraction for Reasoning about Parallel Prefix Sums}},
+year = {2014},
+issue_date = {January 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {49},
+number = {1},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/2578855.2535882},
+doi = {10.1145/2578855.2535882},
+journal = {SIGPLAN Not.},
+month = jan,
+pages = {397–409},
+numpages = {13},
+keywords = {gpus, formal verification, parallel prefix sum computation, abstraction}
+}
+
+@article{lorentz,
+author = {Liang, J. and Song, W.},
+year = {2013},
+month = {02},
+pages = {},
+title = {{Difference equation of lorenz system}},
+volume = {83},
+journal = {International Journal of Pure and Apllied Mathematics},
+doi = {10.12732/ijpam.v83i1.9}
+}
+
+@article{economic,
+author = {Mccullough, B D and Vinod, Hrishikesh},
+year = {1999},
+month = {02},
+pages = {633-665},
+title = {{The Numerical Reliability of Econometric Software}},
+volume = {37},
+journal = {Journal of Economic Literature},
+doi = {10.1257/jel.37.2.633}
+}
+
+@book{numstats,
+  doi = {10.1002/0471475769},
+  url = {https://doi.org/10.1002/0471475769},
+  year = {2003},
+  month = dec,
+  publisher = {John Wiley {\&} Sons,  Inc.},
+  author = {Micah Altman and Jeff Gill and Michael P. McDonald},
+  title = {{Numerical Issues in Statistical Computing for the Social Scientist}}
+}
+
+@Misc{bad-numerics-examples,
+  author = {Ohio State University},
+  title = {{Some disasters attributed to bad numerical computing}},
+  note = {\url{http://www-users.math.umn.edu/~arnold//disasters/disasters.html}},
+}
+
+
+misc{patriot-missile,
+  author = {U.G.A. Office},
+  title = {{PATRIOT MISSILE DEFENSE, Software Problem Led to System Failure at Dhahran, Saudi Arabia}},
+  note = {\url{https://www.gao.gov/assets/220/215614.pdf}},
+}
+
+
+@Misc{fpbench,
+  key={fpbench},
+  title = {{FPBENCH, Benchmarks, compilers and standards for the floating point research community}},
+howpublished = {\url{http://fpbench.org/benchmarks.html}},
+}
+
+
+@InProceedings{munoz-winding,
+author="Moscato, Mariano M.
+and Titolo, Laura
+and Feli{\'u}, Marco A.
+and Mu{\~{n}}oz, C{\'e}sar A.",
+editor="ter Beek, Maurice H.
+and McIver, Annabelle
+and Oliveira, Jos{\'e} N.",
+title="Provably Correct Floating-Point Implementation of a Point-in-Polygon Algorithm",
+booktitle="Formal Methods -- The Next 30 Years",
+year="2019",
+publisher="Springer International Publishing",
+address="Cham",
+pages="21--37",
+isbn="978-3-030-30942-8"
+}
+
+
+@article{fptuner,
+author = {Chiang, Wei-Fan and Baranowski, Mark and Briggs, Ian and Solovyev, Alexey and Gopalakrishnan, Ganesh and Rakamariundefined, Zvonimir},
+title = {{Rigorous Floating-Point Mixed-Precision Tuning}},
+year = {2017},
+issue_date = {May 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {1},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/3093333.3009846},
+doi = {10.1145/3093333.3009846},
+journal = {SIGPLAN Not.},
+month = jan,
+pages = {300–315},
+numpages = {16},
+keywords = {Precision allocation, Rigorous compilation, Floating-point arithmetic, Program optimization, Energy-efficient computing}
+}
+
+@inproceedings{adapt,
+author = {Menon, Harshitha and Lam, Michael O. and Osei-Kuffuor, Daniel and Schordan, Markus and Lloyd, Scott and Mohror, Kathryn and Hittinger, Jeffrey},
+title = {{ADAPT: Algorithmic Differentiation Applied to Floating-Point Precision Tuning}},
+year = {2018},
+publisher = {IEEE Press},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage, and Analysis},
+articleno = {Article 48},
+numpages = {13},
+location = {Dallas, Texas},
+series = {SC ’18}
+}
+
+@article{fptaylor,
+author = {Solovyev, Alexey and Baranowski, Marek S. and Briggs, Ian and Jacobsen, Charles and Rakamari\'c, Zvonimir and Gopalakrishnan, Ganesh},
+title = {{Rigorous Estimation of Floating-Point Round-Off Errors with Symbolic Taylor Expansions}},
+year = {2018},
+issue_date = {March 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {41},
+number = {1},
+issn = {0164-0925},
+url = {https://doi.org/10.1145/3230733},
+doi = {10.1145/3230733},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = dec,
+articleno = {Article 2},
+numpages = {39},
+keywords = {Floating-point arithmetic, mixed-precision arithmetic, formal verification, round-off error, global optimization, IEEE floating-point standard}
+}
+
+@article{munoz-gappa,
+  doi = {10.1007/s10817-015-9320-x},
+  url = {https://doi.org/10.1007/s10817-015-9320-x},
+  year = {2015},
+  month = feb,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {54},
+  number = {4},
+  pages = {285--326},
+  author = {Anthony Narkawicz and C{\'{e}}sar Mu{\~{n}}oz and Aaron Dutle},
+  title = {{Formally-Verified Decision Procedures for Univariate Polynomial Computation Based on Sturm's and Tarski's Theorems}},
+  journal = {Journal of Automated Reasoning}
+}
+
+@article{boldo-2nd-order-wave,
+  doi = {10.1007/s10817-012-9255-4},
+  url = {https://doi.org/10.1007/s10817-012-9255-4},
+  year = {2012},
+  month = aug,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {50},
+  number = {4},
+  pages = {423--456},
+  author = {Sylvie Boldo and Fran{\c{c}}ois Cl{\'{e}}ment and Jean-Christophe Filli{\^{a}}tre and Micaela Mayero and Guillaume Melquiond and Pierre Weis},
+  title = {{Wave Equation Numerical Resolution: A Comprehensive Mechanized Proof of a C Program}},
+  journal = {Journal of Automated Reasoning}
+}
+
+@inproceedings{hifptuner,
+author = {Guo, Hui and Rubio-González, Cindy},
+year = {2018},
+month = {07},
+booktitle = {ISSTA},
+pages = {333-343},
+title = {{Exploiting community structure for floating-point precision tuning}},
+doi = {10.1145/3213846.3213862}
+}
+
+@article{craft,
+  doi = {10.1177/1094342016652462},
+  url = {https://doi.org/10.1177/1094342016652462},
+  year = {2016},
+  month = jun,
+  publisher = {{SAGE} Publications},
+  volume = {32},
+  number = {2},
+  pages = {231--245},
+  author = {Michael O Lam and Jeffrey K Hollingsworth},
+  title = {{Fine-grained floating-point precision analysis}},
+  journal = {The International Journal of High Performance Computing Applications}
+}
+
+@article{Lam2016,
+  doi = {10.1177/1094342016652462},
+  url = {https://doi.org/10.1177/1094342016652462},
+  year = {2016},
+  month = jun,
+  publisher = {{SAGE} Publications},
+  volume = {32},
+  number = {2},
+  pages = {231--245},
+  author = {Michael O Lam and Jeffrey K Hollingsworth},
+  title = {{Fine-grained floating-point precision analysis}},
+  journal = {The International Journal of High Performance Computing Applications}
+}
+
+@book{higham,
+author = {Higham, Nicholas J.},
+title = {{Accuracy and Stability of Numerical Algorithms}},
+publisher = {Society for Industrial and Applied Mathematics},
+year = {2002},
+doi = {10.1137/1.9780898718027},
+address = {},
+edition   = {Second},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9780898718027},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9780898718027}
+}
+
+@article{percival-fft,
+author = {Percival, Colin},
+title = {{Rapid Multiplication modulo the Sum and Difference of Highly Composite Numbers}},
+year = {2003},
+issue_date = {January 2003},
+publisher = {American Mathematical Society},
+address = {USA},
+volume = {72},
+number = {241},
+issn = {0025-5718},
+url = {https://doi.org/10.1090/S0025-5718-02-01419-9},
+doi = {10.1090/S0025-5718-02-01419-9},
+journal = {Math. Comput.},
+month = jan,
+pages = {387395},
+numpages = {9},
+keywords = {rounding errors, FFT, rapid multiplication}
+}
+
+
+
+@article{percival-mult,
+  title={{Error bounds on complex floating-point multiplication}},
+  author={Richard P. Brent and Colin Percival and Paul Zimmermann},
+  journal={Math. Comput.},
+  year={2007},
+  volume={76},
+  pages={1469-1481}
+}
+
+@article{ramos,
+author = {Ramos, George},
+year = {1971},
+month = {10},
+pages = {757-757},
+title = {{Roundoff Error Analysis of the Fast Fourier Transform}},
+volume = {25},
+journal = {Mathematics of Computation - Math. Comput.},
+doi = {10.1090/S0025-5718-1971-0300488-0}
+}
+
+@misc{fpd,
+    title={{Efficient Reasoning About Stencil Programs Using Selective Direct Evaluation}},
+    author={Arnab Das and Sriram Krishnamoorthy and Ian Briggs and Ganesh Gopalakrishnan and Ramakrishna Tipireddy},
+    year={2020},
+    eprint={2004.04359},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC}
+}
+
+@article{ufl,
+author = {Davis, Timothy A. and Hu, Yifan},
+title = {{The University of Florida Sparse Matrix Collection}},
+year = {2011},
+issue_date = {November 2011},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {38},
+number = {1},
+issn = {0098-3500},
+url = {https://doi.org/10.1145/2049662.2049663},
+doi = {10.1145/2049662.2049663},
+journal = {ACM Trans. Math. Softw.},
+month = dec,
+articleno = {Article 1},
+numpages = {25},
+keywords = {Graph drawing, sparse matrices, performance evaluation, multilevel algorithms}
+}
+
+
+@inproceedings{tensor,
+author = {Kim, Jinsung and Sukumaran-Rajam, Aravind and Hong, Changwan and Panyala, Ajay and Srivastava, Rohit Kumar and Krishnamoorthy, Sriram and Sadayappan, P.},
+title = {{Optimizing Tensor Contractions in CCSD(T) for Efficient Execution on GPUs}},
+year = {2018},
+isbn = {9781450357838},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3205289.3205296},
+doi = {10.1145/3205289.3205296},
+booktitle = {Proceedings of the 2018 International Conference on Supercomputing},
+pages = {96–106},
+numpages = {11},
+keywords = {coupled Cluster Methods, Tensor Contractions, GPU Computing, Loop Fusion, CCSD(T)},
+location = {Beijing, China},
+series = {ICS ’18}
+}
+  
+
+@article{aiken-math-log,
+author = {Lee, Wonyeol and Sharma, Rahul and Aiken, Alex},
+title = {{On Automatically Proving the Correctness of Math.h Implementations}},
+year = {2017},
+issue_date = {January 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {2},
+number = {POPL},
+url = {https://doi.org/10.1145/3158135},
+doi = {10.1145/3158135},
+journal = {Proc. ACM Program. Lang.},
+month = dec,
+articleno = {Article 47},
+numpages = {32},
+keywords = {rounding error, transcendental functions, Floating-point, correctness, verification}
+}
+
+@ARTICLE{boland, author={D. {Boland} and G. A. {Constantinides}}, journal={IEEE Transactions on Multimedia}, title={{A Scalable Precision Analysis Framework}}, year={2013}, volume={15}, number={2}, pages={242-256},}
+
+
+@article{codipack,
+  author    = {Max Sagebaum and
+               Tim Albring and
+               Nicolas R. Gauger},
+  title     = {{High-Performance Derivative Computations using CoDiPack}},
+  journal   = {CoRR},
+  volume    = {abs/1709.07229},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1709.07229},
+  archivePrefix = {arXiv},
+  eprint    = {1709.07229},
+  timestamp = {Mon, 13 Aug 2018 16:46:30 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1709-07229.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+a service of Schloss Dagstuhl - Leibniz Center for Informatics	homebrowsesearchabout
+
+@book{realtime,
+author = {Ericson, Christer},
+title = {{Real-Time Collision Detection}},
+year = {2004},
+isbn = {1558607323},
+publisher = {CRC Press, Inc.},
+address = {USA}
+}
+
+@book{compgeo,
+author = {Berg, Mark and Cheong, Otfried and Kreveld, Marc and Overmars, Mark},
+title = {{Computational Geometry: Algorithms and Applications}},
+year = {2008},
+isbn = {3540779736},
+publisher = {Springer-Verlag TELOS},
+address = {Santa Clara, CA, USA},
+edition = {3rd ed.}
+}
+
+
+@article{realpaver,
+author = {Granvilliers, Laurent and Benhamou, Fr\'{e}d\'{e}ric},
+title = {{Algorithm 852: Real{P}aver: An Interval Solver Using Constraint Satisfaction Techniques}},
+year = {2006},
+issue_date = {March 2006},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {32},
+number = {1},
+issn = {0098-3500},
+url = {https://doi.org/10.1145/1132973.1132980},
+doi = {10.1145/1132973.1132980},
+journal = {ACM Trans. Math. Softw.},
+month = mar,
+pages = {138–156},
+numpages = {19},
+keywords = {constraint satisfaction, interval Newton, local consistency, nonlinear system, Interval arithmetic}
+}
+
+
+
+inproceedings{dreal,
+author = {Gao, Sicun and Avigad, Jeremy and Clarke, Edmund},
+year = {2012},
+month = {04},
+pages = {},
+title = {{Delta-Complete Decision Procedures for Satisfiability over the Reals}},
+volume = {7364},
+doi = {10.1007/978-3-642-31365-3_23}
+}
+
+@inproceedings{z3,
+author = {de Moura, Leonardo and Bjørner, Nikolaj},
+year = {2008},
+month = {04},
+pages = {337-340},
+title = {{Z3: an efficient SMT solver}},
+volume = {4963},
+journal = {Tools and Algorithms for the Construction and Analysis of Systems},
+doi = {10.1007/978-3-540-78800-3_24}
+}
+
+
+
+
+@inproceedings{satire,
+author = {Das, Arnab and Briggs, Ian and Gopalakrishnan, Ganesh and Krishnamoorthy, Sriram and Panchekha, Pavel},
+title = {{Scalable yet Rigorous Floating-Point Error Analysis}},
+year = {2020},
+isbn = {9781728199986},
+publisher = {IEEE Press},
+abstract = {Automated techniques for rigorous floating-point round-off error analysis are a prerequisite to placing important activities in HPC such as precision allocation, verification, and code optimization on a formal footing. Yet existing techniques cannot provide tight bounds for expressions beyond a few dozen operators---barely enough for HPC. In this work, we offer an approach embedded in a new tool called Satire that scales error analysis by four orders of magnitude compared to today's best-of-class tools. We explain how three key ideas underlying Satire helps it attain such scale: path strength reduction, bound optimization, and abstraction. Satire provides tight bounds and rigorous guarantees on significantly larger expressions with well over a hundred thousand operators, covering important examples including FFT, matrix multiplication, and PDE stencils.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {51},
+numpages = {14},
+keywords = {round-off error, floating-point arithmetic, symbolic execution, numerical analysis, algorithmic differentiation, scalable analysis, abstraction},
+location = {Atlanta, Georgia},
+series = {SC '20}
+}
+
+
+
+@book{cgal
+, title        = "{CGAL} User and Reference Manual"
+, author      = "{The CGAL Project}"
+, publisher     = "{CGAL Editorial Board}"
+, edition     = "{5.0.2}"
+, year         = 2020
+, url =    "https://doc.cgal.org/5.0.2/Manual/packages.html"
+}
+
+
+@InProceedings{sas-reduced,
+author="Jacquemin, Maxime
+and Putot, Sylvie
+and V{\'e}drine, Franck",
+editor="Podelski, Andreas",
+title="A Reduced Product of Absolute and Relative Error Bounds for Floating-Point Analysis",
+booktitle="Static Analysis",
+year="2018",
+publisher="Springer International Publishing",
+address="Cham",
+pages="223--242",
+abstract="Rigorous estimation of bounds on errors in finite precision computation has become a key point of many formal verification tools. The primary interest of the use of such tools is generally to obtain worst-case bounds on the absolute errors. However, the natural bound on the elementary error committed by each floating-point arithmetic operation is a bound on the relative error, which suggests that relative error bounds could also play a role in the process of computing tight error estimations. In this work, we introduce a very simple interval-based abstraction, combining absolute and relative error propagations. We demonstrate with a prototype implementation how this simple product allows us in many cases to improve absolute error bounds, and even to often favorably compare with state-of-the art tools, that rely on much more costly relational abstractions or optimization-based estimations.",
+isbn="978-3-319-99725-4"
+}
+
+
+@misc{ESD,
+key = {MathworksDoc},
+title = {{Molecular Dynamics}},
+note = {Converting Models From Floating Point to Fixed Point},
+year         = 2008,
+howpublished = {\url{https://www.mathworks.com/content/dam/mathworks/tag-team/Objects/c/52020\_80368V00\_Digest\_Nov08\_SimulinkFP\_FINAL.pdf}}}
+
+
+
+@inproceedings{yices,
+author = {Dutertre, Bruno},
+year = {2014},
+month = {07},
+pages = {737-744},
+title = {{Yices 2.2}},
+volume = {8559},
+isbn = {978-3-319-08866-2},
+doi = {10.1007/978-3-319-08867-9_49}
+}
+
+
+
+
+@inproceedings{khalil,
+author = {Ghorbal, Khalil and Goubault, Eric and Putot, Sylvie},
+title = {{A Logical Product Approach to Zonotope Intersection}},
+year = {2010},
+isbn = {364214294X},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-642-14295-6\_22},
+doi = {10.1007/978-3-642-14295-6\_22},
+abstract = {We define and study a new abstract domain which is a fine-grained combination of zonotopes with (sub-)polyhedric domains such as the interval, octagon, linear template or polyhedron domains While abstract transfer functions are still rather inexpensive and accurate even for interpreting non-linear computations, we are able to also interpret tests (i.e intersections) efficiently This fixes a known drawback of zonotopic methods, as used for reachability analysis for hybrid systems as well as for invariant generation in abstract interpretation: intersection of zonotopes are not always zonotopes, and there is not even a best zonotopic over-approximation of the intersection We describe some examples and an implementation of our method in the APRON library, and discuss some further interesting combinations of zonotopes with non-linear or non-convex domains such as quadratic templates and maxplus polyhedra.},
+booktitle = {Proceedings of the 22nd International Conference on Computer Aided Verification},
+pages = {212–226},
+numpages = {15},
+location = {Edinburgh, UK},
+series = {CAV'10}
+}
+
+
+@article{our-feb-21-cacm,
+author = {Ahn, Dong H. and Baker, Allison H. and Bentley, Michael and Briggs, Ian and Gopalakrishnan, Ganesh and Hammerling, Dorit M. and Laguna, Ignacio and Lee, Gregory L. and Milroy, Daniel J. and Vertenstein, Mariana},
+title = {{Keeping Science on Keel When Software Moves}},
+year = {2021},
+issue_date = {February 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {64},
+number = {2},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3382037},
+doi = {10.1145/3382037},
+abstract = {An approach to reproducibility problems related to porting software across machines and compilers.},
+journal = {Commun. ACM},
+month = jan,
+pages = {66–74},
+numpages = {9}
+}
+
+
+@InProceedings{volatile-exprs,
+author="Gu, Yijia
+and Wahl, Thomas
+and Bayati, Mahsa
+and Leeser, Miriam",
+editor="Tr{\"a}ff, Jesper Larsson
+and Hunold, Sascha
+and Versaci, Francesco",
+title="Behavioral Non-portability in Scientific Numeric Computing",
+booktitle="Euro-Par 2015: Parallel Processing",
+year="2015",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="558--569",
+abstract="The precise semantics of floating-point arithmetic programs depends on the execution platform, including the compiler and the target hardware. Platform dependencies are particularly pronounced for arithmetic-intensive parallel numeric programs and infringe on the highly desirable goal of software portability (which is nonetheless promised by heterogeneous computing frameworks like OpenCL): the same program run on the same inputs on different platforms often produces different results. Serious doubts on the portability of numeric applications arise when these differences are behavioral, i.e. when they lead to changes in the control flow of a program. In this paper we present an algorithm that takes a numeric procedure and determines an input that may lead to different branching decisions depending on how the arithmetic in the procedure is compiled. We illustrate the algorithm on a diverse set of examples, characteristic of scientific numeric computing, where control flow divergence actually occurs across different execution platforms.",
+isbn="978-3-662-48096-0"
+}
+
+@article{goldberg1991every,
+	title={What every computer scientist should know about floating-point arithmetic},
+	author={Goldberg, David},
+	journal={ACM computing surveys (CSUR)},
+	volume={23},
+	number={1},
+	pages={5--48},
+	year={1991},
+	publisher={ACM New York, NY, USA}
+}
+
+@article{luk2005pin,
+	title={Pin: building customized program analysis tools with dynamic instrumentation},
+	author={Luk, Chi-Keung and Cohn, Robert and Muth, Robert and Patil, Harish and 
+	Klauser, Artur and Lowney, Geoff and Wallace, Steven and Reddi, Vijay Janapa and 
+	Hazelwood, Kim},
+	journal={Acm sigplan notices},
+	volume={40},
+	number={6},
+	pages={190--200},
+	year={2005},
+	publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{bernat2011anywhere,
+	title={Anywhere, any-time binary instrumentation},
+	author={Bernat, Andrew R and Miller, Barton P},
+	booktitle={Proceedings of the 10th ACM SIGPLAN-SIGSOFT workshop on Program 
+	analysis for software tools},
+	pages={9--16},
+	year={2011}
+}
+
+@article{nethercote2007valgrind,
+	title={Valgrind: a framework for heavyweight dynamic binary instrumentation},
+	author={Nethercote, Nicholas and Seward, Julian},
+	journal={ACM Sigplan notices},
+	volume={42},
+	number={6},
+	pages={89--100},
+	year={2007},
+	publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{tan2018matrix,
+	title={Matrix factorization on gpus with memory optimization and approximate computing},
+	author={Tan, Wei and Chang, Shiyu and Fong, Liana and Li, Cheng and Wang, Zijun and Cao, Liangliang},
+	booktitle={Proceedings of the 47th International Conference on Parallel Processing},
+	pages={1--10},
+	year={2018}
+}
+
+@inproceedings{hawkes2005direct,
+	title={Direct numerical simulation of turbulent combustion: fundamental insights towards predictive models},
+	author={Hawkes, Evatt R and Sankaran, Ramanan and Sutherland, James C and Chen, Jacqueline H},
+	booktitle={Journal of Physics: Conference Series},
+	volume={16},
+	number={1},
+	pages={009},
+	year={2005},
+	organization={IOP Publishing}
+}
+
+@article{li2015correlation,
+	title={Correlation ratio based volume image registration on GPUs},
+	author={Li, Ang and Kumar, Akash and Ha, Yajun and Corporaal, Henk},
+	journal={Microprocessors and Microsystems},
+	volume={39},
+	number={8},
+	pages={998--1011},
+	year={2015},
+	publisher={Elsevier}
+}

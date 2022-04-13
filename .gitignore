@@ -4,3 +4,9 @@
 *.ptx
 *.cubin
 *.fatbin
+*.aux
+*.bbl
+*.blg
+*.log
+*.pdf
+*.synctex.gz
