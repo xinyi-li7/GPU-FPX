@@ -70,48 +70,45 @@ The experiments we perform on this suit are
 
 We have three bash scripts to run the above three experiments automatically and export the data to text files. Additionally, we have three python scripts to generate the exceptional table, `fast_math opt.` table, and the bar diagram in our paper. 
 	
-	\section{CUDA-Sample}
-	\paragraph{Overview} There are more than 100 programs in the official Cuda-Samples\footnote{https://github.com/NVIDIA/cuda-samples.git}. However, we removed programs
-	\begin{itemize}
-		\item requiring more than one GPU;
-		\item requiring display;
-		\item without any FP instructions.
-	\end{itemize} 
-	Finally, we have 77 programs to evaluate.
-	\paragraph{Software} Cuda-Samples are executed on machine 2. We are using
-	\begin{enumerate}
-		\item {\tt NVCC} from CUDA-11.6 toolkit;
-		\item {\tt gcc 9.4.0}; 
-		\item {\tt Python 3.8.10}.
-	\end{enumerate} 
-	Notice that we are using the default compilers' flags. 
-	\paragraph{Experiments}
-	We perform two experiments on this collection.
-	\begin{enumerate}
-		\item We recorded the exceptional report for each program.
-		\item  We ran these benchmarks with device-checking and host-checking separately with 1500 seconds time limit. Also, recorded each exceptional report and running time of both approaches.
-	\end{enumerate}
-	The above experiments could be executed using one bash script. We then use these information to generate exceptional table and performance scatter plotting using python scripts.  
-	\section{NPB-GPU: }
-	\paragraph{Overview}  This test suit contains 8 programs and each accept 8 classes {\tt S, W, A, B, C, D, E, F} with the ascending data size. In our experiment, we evaluated each program with three classes {\tt S, W, A}.
-	\paragraph{Software} We run NPB-GPU on machine 1, and related software versions are
-	\begin{enumerate}
-		\item {\tt NVCC} from CUDA-11.5 toolkit, with flag {\tt arch=sm\_70}. 
-		\item {\tt gcc 9.4.0}
-		\item {\tt Python 3.8.10}
-	\end{enumerate}
-	\paragraph{Experiment}
-	We compiled each benchmark with three classes with a bash script and then ran these 24 programs with GPU-FPX using another bash script. Later, we used the a python script to extract the exceptions for each case. It turns out there's no exceptions in the 24 executables.  
-	\section{CuMF-Movielens: } We built this project as its {\tt README.md} instructed on machine 1. Here the software to build this application are 
-	\begin{enumerate}
-		\item CUDA-9.2 toolkit;
-		\item {\tt gcc-7};
-		\item {Python 2.7.18} and {\tt ipython} package.
-	\end{enumerate}
-	The {\tt python2} here is used to download and preprocess the \textit{Movieles10M} data. After compiling the programs, we ran the default command with GPU-FPX and recorded the report.  
-	\section{HPCG: } There are several versions including a docker container. Here we chose the \textit{HPCG 3.1 Binary for NVIDIA GPUs Including Ampere based on CUDA 11}, and run it on machine 2. Since it is a binary, we only care about the CUDA toolkit version. Here we used CUDA-11.6. 
+### CUDA-Sample
+#### Overview
+There are more than 100 programs in the official [Cuda-Samples](https://github.com/NVIDIA/cuda-samples.git). However, we removed programs
+1. requiring more than one GPU;
+2. requiring display;
+3. without any FP instructions.
+
+Finally, we have 77 programs to evaluate.
+#### Software} Cuda-Samples are executed on machine 2. We are using
+1. `NVCC` from CUDA-11.6 toolkit;
+2. `gcc 9.4.0`; 
+3. `Python 3.8.10`.
+Notice that we are using the default compilers' flags. 
+#### Experiments
+We perform two experiments on this collection.
+1. We recorded the exceptional report for each program.
+2. We ran these benchmarks with device-checking and host-checking separately with 1500 seconds time limit. Also, recorded each exceptional report and running time of both approaches.
+The above experiments could be executed using one bash script. We then use these information to generate exceptional table and performance scatter plotting using python scripts.  
+### NPB-GPU: 
+#### Overview
+This test suit contains 8 programs and each accept 8 classes `S, W, A, B, C, D, E, F` with the ascending data size. In our experiment, we evaluated each program with three classes `S, W, A`.
+#### Software
+We run NPB-GPU on machine 1, and related software versions are
+1. `NVCC` from CUDA-11.5 toolkit, with flag `arch=sm_70`; 
+2. `gcc 9.4.0`
+3. `Python 3.8.10`
+#### Experiment
+We compiled each benchmark with three classes with a bash script and then ran these 24 programs with GPU-FPX using another bash script. Later, we used the a python script to extract the exceptions for each case. It turns out there's no exceptions in the 24 executables.  
+#### CuMF-Movielens:
+We built this project as its {\tt README.md} instructed on machine 1. Here the software to build this application are 
+1. CUDA-9.2 toolkit;
+2. `gcc-7`;
+3. `Python 2.7.18` and `ipython` package.
+
+The `python2` here is used to download and preprocess the _Movieles10M_ data. After compiling the programs, we ran the default command with GPU-FPX and recorded the report.  
+#### HPCG: 
+There are several versions including a docker container. Here we chose the _HPCG 3.1 Binary for NVIDIA GPUs Including Ampere based on CUDA 11_, and run it on machine 2. Since it is a binary, we only care about the CUDA toolkit version. Here we used CUDA-11.6. 
 	
-	In the experiment, we evaluated eight different data grid settings provided by NVIDIA in \textit{HPCG 3.1 Binary for NVIDIA GPUs Including Volta based on CUDA 10}. The exceptional report is generated in each data grid. We later extracted the exceptional information using a python script. 
+In the experiment, we evaluated eight different data grid settings provided by NVIDIA in _HPCG 3.1 Binary for NVIDIA GPUs Including Volta based on CUDA 10_. The exceptional report is generated in each data grid. We later extracted the exceptional information using a python script. 
 
 
 # License 
